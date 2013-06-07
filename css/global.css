@@ -1,0 +1,324 @@
+/*
+*	Rui Qing
+*	global.css
+*	The Old County. 2013
+*/
+
+	/*Global Styles*/
+	html, body {
+		font-size: 12px;
+		color: #ffffff;
+		font-family:Arial, Helvetica, Verdana, sans-serif;
+		width: 100%;
+		padding:0;
+		margin:0;
+	}
+
+	body{
+		background: grey;
+	}
+
+	a,
+	a img {
+		text-decoration: none;
+		outline: none;
+		border: 0px none transparent;
+	}
+	img {
+		border: 0;
+	}
+
+	h1{
+		font-size:16px;
+	}
+
+	h2{
+		font-size:14px;
+	}
+
+	h3{
+		font-size:12px;
+	}
+
+
+
+	/* global nav */
+	#menu div {
+		display: none;
+	}
+
+	#menu {
+		background: #000;
+		color: #fff;
+		padding: 10px;
+		list-style-type: none;
+		margin: 0;
+		text-transform: uppercase;
+		z-index: 1;
+		position: relative;
+	}
+
+	#menu li {
+		border-right: 1px solid #ec2337;
+		display: inline-block;
+		padding-left: 11px;
+		padding-right: 11px;
+		line-height: 12px;
+	}
+
+	#menu li:nth-last-child(1) {
+		border-right: none;
+	}
+
+	#menu li a {
+		color: #fff;
+	}
+
+	#menu li a:active, #menu li a:hover {
+		color: #ec2337;
+	}
+
+	#menu li a.selected{
+		color: #ec2337;
+	}
+
+	#footer{
+		padding-top: 27px;
+		padding-bottom: 27px;
+		overflow: hidden;
+		background: #000000;
+	}
+
+
+
+	#container{
+		background: brown;
+		positioN:relative;
+	}
+
+
+	section{
+		height:auto;
+		overflow: hidden;
+		positioN:relative;
+	}
+
+	.overlayedContent{
+		z-index:1;
+		position:absolute;
+		top:0;
+		width: 100%;
+		height: 100%;
+	}
+
+	.backgroundImage{
+		z-index:0;
+		background: orange;
+	}
+
+	.backgroundImage img{
+		width: 100%;
+	}
+
+	#header{
+		top: 0;
+		position: fixed;
+		width: 100%;
+		z-index: 2;
+	}
+
+	#menu{
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		background: blue;
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#menu li{
+		float: left;
+	}
+
+
+
+
+	.coloumn{
+		width: 174px;
+	}
+
+
+
+
+
+	/*responsive*/
+
+
+	/*standard mode*/
+	@media only screen and (max-width: 850px) and (min-width: 641px){
+		#container{
+			background: red;
+		}
+	}
+
+	/*ipad mode*/
+	@media only screen and (max-width: 640px) and (min-width: 451px){
+		#container{
+			background: green;
+		}
+	}
+
+	/*mobile mode*/
+	@media only screen and (max-width: 450px) {
+		#container{
+			background: pink;
+		}
+	}
+
+
+
+
+
+
+
+#parallaxOne .coloumn{
+	position: absolute;
+	right: 70px;
+	top: 150px;
+}
+
+#parallaxTwo .coloumn{
+	position: absolute;
+	left: 50px;
+	top: 150px;
+}
+
+#parallaxThree .coloumn{
+	position: absolute;
+	right: 70px;
+	top: 150px;
+}
+
+
+
+
+
+
+.parallaxobjs{
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	z-index: 1;
+	height: 100%;
+	width: 100%;
+}
+
+.objects {
+	position: absolute;
+	height: 100%;
+	z-index: 1;
+	background-repeat: no-repeat;
+}
+
+
+
+
+.goldFish {
+	background-image: url("../images/parallax1/fish.png");
+	width: 459px;
+	left: 27px;
+}
+
+.gourd {
+	background-image: url("../images/parallax1/gourd.png");
+	width: 333px;
+	left: 576px;
+}
+
+.coin1 {
+	background-image: url("../images/parallax1/coin1.png");
+	width: 100px;
+	left: 882px;
+}
+
+.coin2 {
+	background-image: url("../images/parallax1/coin2.png");
+	width: 152px;
+	left: 514px;
+}
+
+.coin3 {
+	background-image: url("../images/parallax1/coin3.png");
+	width: 100px;
+	left: 377px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.tigergold {
+	background-image: url("../images/parallax2/tigergold.png");
+	width: 488px;
+	left: 510px;
+}
+
+.bunchincense {
+	background-image: url("../images/parallax2/bunchincense.png");
+	width: 252px;
+	left: 307px;
+}
+
+.incensestick {
+	background-image: url("../images/parallax2/incense.png");
+	width: 445px;
+	left: 703px;
+}
+
+
+
+
+
+
+.buddah {
+	background-image: url("../images/parallax3/buddah.png");
+	width: 497px;
+	left: 221px;
+}
+
+.bamboo {
+	background-image: url("../images/parallax3/bamboo.png");
+	width: 463px;
+	left: -17px;
+}
+
+.plant {
+	background-image: url("../images/parallax3/plant.png");
+	width: 394px;
+	left: 636px;
+}
+
+.leaf1 {
+	background-image: url("../images/parallax3/leaf1.png");
+	width: 244px;
+	left: 548px;
+}
+
+
+.leaf2 {
+	background-image: url("../images/parallax3/leaf2.png");
+	width: 191px;
+	left: 1038px;
+}
+
+
+
+
+

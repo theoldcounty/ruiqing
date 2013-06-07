@@ -1,0 +1,102 @@
+/*
+*	Rui Qing
+*	carousel.css
+*	The Old County. 2013
+*/
+
+	/*Carousel Styles*/
+	.arrow {
+		position: absolute;
+		top: 46%;
+		height: 50px;
+		width: 50px;
+		background: url('../images/arrowsprite.png') 0 50px no-repeat;
+		z-index: 9999;
+		text-indent: 9999px;
+	}
+
+	.arrow#left {
+		left: 20px;
+		background-position: 0 -51px;
+	}
+
+	.arrow#right {
+		right: 20px;
+		background-position: -50px -51px;
+	}
+
+	.arrow#left.disable {
+		background-position: 0px -101px;
+	}
+
+	.arrow.flowtime {
+		background-position-y: -206px!important;
+	}
+
+	.wrap1, .wrap2 {
+		display: initial;
+		position: relative;
+	}
+
+	#cover-flow {
+		overflow: hidden;
+		height: 800px;
+		width: 1200px;
+	}
+
+	#cover-flow nav {
+		width: 9000px;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		list-style: none;
+		margin: 0;
+		z-index:1;
+	}
+
+	#cover-flow nav a {
+		display: block;
+		float: left;
+		width: 148px;
+		height: 100%;
+		position: relative;
+		overflow: hidden;
+		border-right: 2px solid #ffffff;
+		padding: 0;
+		text-decoration: none;
+	}
+
+	#cover-flow nav img {
+		position: absolute;
+		top: 0;
+		height: 100%;
+		width: auto;
+		min-height: 764px;
+		min-width: 148px;
+	}
+
+	.js #cover-flow {
+		overflow: hidden;
+	}
+
+	#fullspread{
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index:0;
+		width: 100%;
+		height: 100%;
+	}
+
+	#fullspread .imgHolder img{
+		width: 100%;
+		height: auto;
+	}
+
+	.back{
+		position: absolute;
+		top: 10px;
+		right: 28px;
+		z-index: 2;
+	}

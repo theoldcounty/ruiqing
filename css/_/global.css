@@ -1,0 +1,368 @@
+/*
+*	Mind Tunes
+*	global.css
+*	Profero Ltd. 2013
+*/
+
+/*Global Styles*/
+html, body {
+	font-size: 12px;
+	color: #ffffff;
+	font-family:Arial, Helvetica, Verdana, sans-serif;
+	width: 100%;
+}
+
+body{
+	background: grey;
+}
+
+a,
+a img {
+    text-decoration: none;
+    outline: none;
+    border: 0px none transparent;
+}
+
+@font-face {
+	font-family: 'BrandonGrotesque-Medium';
+	src: url('fonts/brandon_grotesque_medium/brandon_grotesque_medium.eot');
+	src: url('fonts/brandon_grotesque_medium/brandon_grotesque_medium.eot?#iefix') format('embedded-opentype'),
+			 url('fonts/brandon_grotesque_medium/brandon_grotesque_medium.woff') format('woff'),
+			 url('fonts/brandon_grotesque_medium/brandon_grotesque_medium.ttf') format('truetype'),
+			 url('fonts/brandon_grotesque_medium/brandon_grotesque_medium.svg#brandon_grotesque_medium') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'BrothersBold';
+	src: url('fonts/brothersot_bold/brothersot_bold.eot');
+	src: url('fonts/brothersot_bold/brothersot_bold.eot?#iefix') format('embedded-opentype'),
+			 url('fonts/brothersot_bold/brothersot_bold.woff') format('woff'),
+			 url('fonts/brothersot_bold/brothersot_bold.ttf') format('truetype'),
+			 url('fonts/brothersot_bold/brothersot_bold.svg#brothersot_bold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'BrandonGrotesque-Bold';
+	src: url('fonts/brandon_grotesque_bold/brandon_grotesque_bold.eot');
+	src: url('fonts/brandon_grotesque_bold/brandon_grotesque_bold.eot?#iefix') format('embedded-opentype'),
+			 url('fonts/brandon_grotesque_bold/brandon_grotesque_bold.woff') format('woff'),
+			 url('fonts/brandon_grotesque_bold/brandon_grotesque_bold.ttf') format('truetype'),
+			 url('fonts/brandon_grotesque_bold/brandon_grotesque_bold.svg#brandon_grotesque_bold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'HoeflerTxt-Roman';
+	src: url('fonts/hoefler_txt_roman/hoefler_txt_roman.eot');
+	src: url('fonts/hoefler_txt_roman/hoefler_txt_roman.eot?#iefix') format('embedded-opentype'),
+			 url('fonts/hoefler_txt_roman/hoefler_txt_roman.woff') format('woff'),
+			 url('fonts/hoefler_txt_roman/hoefler_txt_roman.ttf') format('truetype'),
+			 url('fonts/hoefler_txt_roman/hoefler_txt_roman.svg#hoefler_txt_roman') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'HoeflerTxt-BoldItalic';
+	src: url('fonts/hoefler_txt_bold_italic/hoefler_txt_bold_italic.eot');
+	src: url('fonts/hoefler_txt_bold_italic/hoefler_txt_bold_italic.eot?#iefix') format('embedded-opentype'),
+			 url('fonts/hoefler_txt_bold_italic/hoefler_txt_bold_italic.woff') format('woff'),
+			 url('fonts/hoefler_txt_bold_italic/hoefler_txt_bold_italic.ttf') format('truetype'),
+			 url('fonts/hoefler_txt_bold_italic/hoefler_txt_bold_italic.svg#HoeflerTxt-BoldItalic') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.submenu{
+	margin:0;
+	padding:0;
+	overflow:hidden;
+	margin-bottom: 22px;
+}
+.submenu li{
+	list-style-type:none;
+	color: #ffffff;
+	float:left;
+	margin-right:13px;
+	text-transform: uppercase;
+}
+
+.submenu li a{
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.terms{
+	margin-left: auto;
+	margin-right: auto;
+	color:#676767;
+	position:relative;
+}
+
+.terms .leftSide{
+	float:left;
+	width: 640px;
+}
+
+.drinkawarenotice{
+	height: 100px;
+	width: 105px;
+	position: absolute;
+	right: 0;	
+}
+
+
+/* global nav */
+
+#menu div {
+	display: none;
+}
+
+#menu {
+	background: #000;
+	color: #fff;
+	padding: 10px;
+	list-style-type: none;
+	margin: 0;
+	text-transform: uppercase;
+	z-index: 1;
+	position: relative;	
+}
+
+#menu li {
+	border-right: 1px solid #ec2337;
+	display: inline-block;
+	padding-left: 11px;
+	padding-right: 11px;
+	line-height: 12px;
+}
+
+#menu li:nth-last-child(1) {
+	border-right: none;
+}
+
+#menu li a {
+	color: #fff;
+}
+
+#menu li a:active, #menu li a:hover {
+	color: #ec2337;
+}
+
+#menu li.selected{
+
+}
+#menu li.selected a{
+	color: #ec2337;
+}
+
+#footer{
+	padding-top: 27px;
+	padding-bottom: 27px;
+	overflow: hidden;
+	background: #000000;
+}
+
+#footer h2{
+	margin:0;
+	line-height: 31px;
+	font-size: 31px;
+	font-family: BrandonGrotesque-Bold;
+}
+
+#footer .submenu li a{
+	color:#ff263b;
+}
+
+#footer .submenu li{
+	margin-right: 93px;
+}
+
+/*England*/
+#footer.lang_gb{
+	height: 140px;
+}
+#footer.lang_gb .drinkawarenotice{
+	width: 137px;
+	height: 122px;
+}
+
+/*Ireland*/
+#footer.lang_ie .drinkawarenotice{
+	height: 27px;
+	width: 320px;
+	top: 36px;
+}
+
+/*Germany*/
+#footer.lang_de .drinkawarenotice{
+	height: 44px;
+	width: 200px;
+	top: 36px;
+}
+
+@media only screen and (max-width: 850px) {
+	
+}
+
+/*standard mode*/
+@media only screen and (min-width: 641px){
+	.terms{
+		
+	}
+
+	.lang_ie .leftSide {
+		width: 443px;
+	}
+}
+
+/*ipad mode*/
+@media only screen and (max-width: 640px) and (min-width: 451px){
+	.terms{
+		width:600px;
+	}
+
+	#footer h2{
+		line-height: 18px;
+		font-size: 18px;
+	}
+	
+	#footer .submenu li{
+		margin-right:30px;
+	}
+	
+	.drinkawarenotice img{
+		width: 100%;
+	}
+	#footer.lang_gb .drinkawarenotice{
+		width: 110px;
+	}
+
+	#footer.lang_ie .drinkawarenotice{
+		width: 258px;
+	}
+
+	#footer.lang_de .drinkawarenotice{
+		width: 110px;
+	}
+}
+
+/*mobile mode*/
+@media only screen and (max-width: 450px) {
+	#menu .activeMenu {
+		font-size: 1em;
+		line-height: 2.5em;
+	}
+
+	#menu .mobiToggle a {
+		font-size: 1.3em;
+	}
+
+	.terms{
+		width:290px;
+		text-align: center;
+		font-size: 11px;
+	}
+
+	.terms .leftSide{
+		float:none;
+		width: auto;
+	}
+	
+	.terms .rightSide{
+		margin-top: 25px;
+	}
+
+	#footer h2{
+		line-height: 24px;
+		font-size: 24px;
+	}
+
+	.drinkawarenotice{
+		position: relative;
+		top: 0!important;
+		margin-left: auto;
+		margin-right: auto;		
+	}
+	
+	.drinkawarenotice img{
+		width:95%;
+		height:auto;
+	}
+	
+	#footer .submenu li{
+		width: 100%;
+		margin-right:0;
+	}
+	
+	#footer{
+		height: auto!important;
+	}
+}
+
+
+/*lightbox specific :: widths are larger to compensate for NO scrollbar.*/
+
+#lightboxme{
+	display:none;
+	color:#ffffff;
+}
+#lightboxme .close{
+	text-align: right;
+	text-transform:uppercase;
+	font-family: 'BrandonGrotesque-Medium', Arial, sans-serif;
+	font-size: 18px;
+	font-weight:normal;
+}
+.lb_overlay{
+	opacity:0.85!important;
+}
+
+.holdOverlay{
+	height: 100%;
+	overflow: hidden;
+}
+
+/*standard mode*/
+@media only screen and (min-width: 655px){
+	#lightboxme{
+		width:853px;
+	}
+}
+
+/*ipad mode*/
+@media only screen and (max-width: 654px) and (min-width: 468px){
+	#lightboxme{
+		width:500px;
+	}	
+	#lightboxme iframe{
+		width:500px;
+		height:338px;
+	}	
+	#lightboxme h1 {
+		font-size: 30px;
+	}
+}
+
+/*mobile mode*/
+@media only screen and (max-width: 467px) {
+	#menu li {
+		font-size: .7em;
+	}
+
+	#lightboxme{
+		width:290px;
+	}
+	#lightboxme iframe{
+		width:290px;
+		height:163px;
+	}
+	#lightboxme h1 {
+		font-size: 18px;
+	}
+}
