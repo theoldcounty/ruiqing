@@ -19,72 +19,72 @@ or if it needs to jump to a particular article
 
 
 */
+$.App ={
+	init: function(){
+		var that = this;
 
-	var application = {
-		init: function(){
-			var that = this;
+		$.App.parallax.init();
+		$.App.scrollMenu.init();
+		$.App.curtainCarousel.init();
+		$.App.swiperHandler.init();
 
-			parallaxTime.init();
-			scrollMenu.init();
-			curtainCarousel.init();
+		//this.addMenuListener();
+	},
+	loadJsDynamically: function(filename){
+		var fileref=document.createElement('script');
+		fileref.setAttribute("type","text/javascript");
+		fileref.setAttribute("src", filename);
 
-			//this.addMenuListener();
-		},
-		loadJsDynamically: function(filename){
-			var fileref=document.createElement('script');
-			fileref.setAttribute("type","text/javascript");
-			fileref.setAttribute("src", filename);
-
-			if (typeof fileref!="undefined"){
-				$('.jsholder').append(fileref);
-			}
-		},
-		isResponsiveBrowser: true,
-		browserCheck: function(){
-			console.log("browserCheck");
-
-			if ($.browser.msie  && parseInt($.browser.version, 10) <= 8) {
-				$('html').addClass("ie8orless");
-				this.isResponsiveBrowser = false;
-			}
-			else{
-				this.loadJsDynamically("js/libs/zepto.touch.js");//dynamically load and add this .js file
-				this.loadJsDynamically("js/responsive.js");//dynamically load and add this .js file
-			}
-		},/*
-		addMenuListener: function(){
-			var that = this;
-			var $navigation = $('.internal-links li');
-
-			window.setTimeout(function() {
-				that.highlightMenuItem($navigation.find('a').first());
-			}, 200);
-
-			$navigation.find('a').on('mouseover', function() {
-				that.highlightMenuItem($(this));
-			});
-		},
-		highlightMenuItem: function($item) {
-			$('#nav-pointer').stop().animate({ top: $item.position().top + 5 }, 500, 'easeOutBack');
-			$('#nav-pointer').find('#pointer-left').stop().animate({left: $item.position().left - 15}, 500);
-			$('#nav-pointer').find('#pointer-right').stop().animate({left: $item.position().left + $item.width() + 10}, 500);
-		},*/
-		hashtrigger: function(hash){
-			this.setHash(hash);//set the changed hash
-		},
-		getHash: function(){
-			var hash = window.location.hash;
-			return hash.substring(1); // remove #
-		},
-		setHash: function(hashVar){
-			window.location.hash = hashVar;
+		if (typeof fileref!="undefined"){
+			$('.jsholder').append(fileref);
 		}
-	};
+	},
+	isResponsiveBrowser: true,
+	browserCheck: function(){
+		console.log("browserCheck");
+
+		if ($.browser.msie  && parseInt($.browser.version, 10) <= 8) {
+			$('html').addClass("ie8orless");
+			this.isResponsiveBrowser = false;
+		}
+		else{
+			this.loadJsDynamically("js/libs/zepto.touch.js");//dynamically load and add this .js file
+			this.loadJsDynamically("js/responsive.js");//dynamically load and add this .js file
+		}
+	},/*
+	addMenuListener: function(){
+		var that = this;
+		var $navigation = $('.internal-links li');
+
+		window.setTimeout(function() {
+			that.highlightMenuItem($navigation.find('a').first());
+		}, 200);
+
+		$navigation.find('a').on('mouseover', function() {
+			that.highlightMenuItem($(this));
+		});
+	},
+	highlightMenuItem: function($item) {
+		$('#nav-pointer').stop().animate({ top: $item.position().top + 5 }, 500, 'easeOutBack');
+		$('#nav-pointer').find('#pointer-left').stop().animate({left: $item.position().left - 15}, 500);
+		$('#nav-pointer').find('#pointer-right').stop().animate({left: $item.position().left + $item.width() + 10}, 500);
+	},*/
+	hashtrigger: function(hash){
+		this.setHash(hash);//set the changed hash
+	},
+	getHash: function(){
+		var hash = window.location.hash;
+		return hash.substring(1); // remove #
+	},
+	setHash: function(hashVar){
+		window.location.hash = hashVar;
+	}
+};
 
 	/*on window resize*/
 	window.onresize = function(event) {
-		if(application.isResponsiveBrowser){
-			responsive.onResize();
+		if($.App.isResponsiveBrowser){
+			$.App.responsive.onResize();
 		}
 	}
 
@@ -98,18 +98,18 @@ or if it needs to jump to a particular article
 	}
 
 	$(document).ready(function() {
-		application.browserCheck();
-		if(application.isResponsiveBrowser){
-			responsive.init();
+		$.App.browserCheck();
+		if($.App.isResponsiveBrowser){
+			$.App.responsive.init();
 		}
-		application.init();
+		$.App.init();
 	});
 
 	// Bind an event to window.onhashchange that, when the history state changes,
 	// gets the url from the hash and displays either our cached content or fetches
 	// new content to be displayed.
 	$(window).bind('hashchange', function(e) {
-		application.hashtrigger(application.getHash());
+		$.App.hashtrigger($.App.getHash());
 	})
 
 	// Since the event is only triggered when the hash changes, we need to trigger

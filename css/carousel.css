@@ -66,6 +66,11 @@
 		padding: 0;
 		text-decoration: none;
 	}
+	#cover-flow nav a.filer {
+		width:2000px;
+		background: #ffffff;
+		cursor: inherit;
+	}
 
 	#cover-flow nav img {
 		position: absolute;
@@ -87,6 +92,7 @@
 		z-index:0;
 		width: 100%;
 		height: 100%;
+		background: pink;
 	}
 
 	#fullspread .imgHolder img{

@@ -5,7 +5,7 @@
  * @copyright  Copyright (c) 2013 Forest
  */
 
-var parallaxTime = {
+$.App.parallax = {
 	init: function(){
 		$('#parallaxOne .obj1, #parallaxOne .obj2, #parallaxOne .obj3, #parallaxOne .obj4, #parallaxOne .obj5').scrolly({bgParallax: true});
 		$('#parallaxTwo .obj1, #parallaxTwo .obj2, #parallaxTwo .obj3').scrolly({bgParallax: true});

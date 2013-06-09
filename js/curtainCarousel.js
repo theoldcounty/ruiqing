@@ -19,7 +19,7 @@ animateGroupedBars //this performs the global animation for the two wrapped bar 
 
 */
 
-	var curtainCarousel = {
+$.App.curtainCarousel = {
 		init: function(){
 			console.log("start curtain carousel");
 
@@ -400,23 +400,20 @@ animateGroupedBars //this performs the global animation for the two wrapped bar 
 
 			$('.arrow.carousel').fadeOut(300);
 
-			this.loadContent(url, function(){
+			//this.loadContent(url, function(){
 				//load complete
 
-				console.log("IMG LOADED - now fade in and fade out covers");
-
+					$.App.swiperHandler.setSwiperTo("fullgallery", index);
 					that.moveBars(index, function(){
 						console.log("finsihed moving the bars");
 						$('#cover-flow nav').hide();
-						$('.arrow').removeClass("carousel").addClass("flowtime").removeClass("disable").addClass("enable");
-						$('.arrow.flowtime').fadeIn(300);
 					});
 
 					window.setTimeout(function(){
 						that.isCoverClicked = false;//reset
 					},300);
 
-			});
+			//});
 
 		},
 		switchToColor: function(el){
@@ -512,4 +509,4 @@ animateGroupedBars //this performs the global animation for the two wrapped bar 
 				callback(true);
 			});
 		}
-	};
+};

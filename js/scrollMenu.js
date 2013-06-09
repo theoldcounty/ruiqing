@@ -5,7 +5,7 @@
  * @copyright  Copyright (c) 2013 The Old County
  */
 
-var scrollMenu = {
+$.App.scrollMenu = {
 
 	/**
 	* Initialise
@@ -17,8 +17,6 @@ var scrollMenu = {
 		this.eventBinding();
 
 	},
-
-
 	//Get Sections top position
 	getTargetTop: function(elem){
 
@@ -33,7 +31,6 @@ var scrollMenu = {
 		//subtracts the height of the nav.
 		return $(id).offset().top - offset;
 	},
-
 	toggleSubMenu: function(el, active){
 		if (active){
 			$(el).find('.submenu').slideDown();
@@ -44,18 +41,14 @@ var scrollMenu = {
 			$(el).removeClass("on");
 		}
 	},
-
 	closeAccordionsInAllSections: function(){
 		$('.section').each(function( index ) {
 			var sectionAccordion = $(this).find(".accordion");
 			$.Forest.accordion.shutParentAccordion(sectionAccordion);
 		});
 	},
-
 	previousSection: "",
-
 	proximityToNextSection : "",
-
 	nextSection: "",
 	// Go through each section to see if it's at the top.
 	// if it is add an active class
@@ -95,8 +88,6 @@ var scrollMenu = {
 			}
 		}
 	},
-
-
 	eventBinding: function(){
 		var _self = this;
 
@@ -112,15 +103,11 @@ var scrollMenu = {
 			//gets the distance from the top of the
 			//section refenced in the href.
 
-
 			var target = _self.getTargetTop($(this));
 			console.log("target", target);
 
-
 			$('html, body').animate({scrollTop:target}, 500);//scrolls to that section.
-
 		});
-
 
 		//Check if page is already scrolled to a section.
 		_self.checkSectionSelected($(window).scrollTop());
@@ -128,6 +115,5 @@ var scrollMenu = {
 		$(window).scroll(function(e){
 			_self.checkSectionSelected($(window).scrollTop());
 		});
-
 	}
 };
