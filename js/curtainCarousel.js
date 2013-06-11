@@ -96,17 +96,17 @@ $.App.curtainCarousel = {
 		},
 		checkArrowStates: function(){
 			if(this.currentBatch == 1){
-				this.disableArrow("#left");
+				this.disableArrow(".arrow.carousel.left");
 			}
 			else{
-				this.enableArrow("#left");
+				this.enableArrow(".arrow.carousel.left");
 			}
 
 			if(this.currentBatch == this.getMaxBatchCount()){
-				this.disableArrow("#right");
+				this.disableArrow(".arrow.carousel.right");
 			}
 			else{
-				this.enableArrow("#right");
+				this.enableArrow(".arrow.carousel.right");
 			}
 		},
 
@@ -175,8 +175,8 @@ $.App.curtainCarousel = {
 				this.currentBatch++;
 			}
 
-			this.disableArrow("#left");
-			this.disableArrow("#right");
+			this.disableArrow(".arrow.carousel.left");
+			this.disableArrow(".arrow.carousel.right");
 
 			$('#cover-flow nav').stop().animate({
 				left: symbol+"="+displacement,
@@ -223,23 +223,20 @@ $.App.curtainCarousel = {
 			});
 		},
 		onArrowClick: function(el){
-			var side = $(el).attr("id");
-			////console.log("clicked "+side);
+			var isLeft = $(el).hasClass("left");
+			var side = "right";
 
+			if(isLeft){
+				side = "left";
+			}
+
+			//console.log("clicked "+side);
 
 			var isDisabled = $(el).hasClass("disable");
-			var isCarousel = $(el).hasClass("carousel");
-			var isFlowtime = $(el).hasClass("flowtime");
 
 			if(!isDisabled){
-				if(isFlowtime){
-					//is flowtime
-					this.flowScrollAnimate(side);
-
-				}else{
-					//iscarouseltime
-					this.coverScrollAnimate(side);
-				}
+				//iscarouseltime
+				this.coverScrollAnimate(side);
 			}
 		},
 		animateGroupedBars: function(group, duration, direction, displacement){
@@ -318,7 +315,7 @@ $.App.curtainCarousel = {
 			var displacement = $(window).width();
 			var duration = 1900;
 
-			$('.arrow').removeClass("flowtime").addClass("carousel").removeClass("disable").addClass("enable");
+			$('.arrow.carousel').removeClass("disable").addClass("enable");
 
 			$('.arrow.carousel').show();
 
@@ -430,7 +427,7 @@ $.App.curtainCarousel = {
 		bindEvents: function(){
 			var that = this;
 
-			$(".arrow").click(function(e) {
+			$(".arrow.carousel").click(function(e) {
 				that.onArrowClick(this);
 			});
 
@@ -441,7 +438,7 @@ $.App.curtainCarousel = {
 			});
 
 
-			$(".arrow").mouseover(function() {
+			$(".arrow.carousel").mouseover(function() {
 				var isDisabled = $(this).hasClass("disable");
 				if(!isDisabled){
 					$(this).addClass("hover");
@@ -462,7 +459,7 @@ $.App.curtainCarousel = {
 				//left
 				if(e.keyCode == 37){
 					if(that.paneInControl == "homepage"){
-						$(".arrow#left").click();
+						$(".arrow.left.carousel").click();
 					}
 					if(that.paneInControl == "subpage"){
 						$('a#previous').click();
@@ -472,7 +469,7 @@ $.App.curtainCarousel = {
 				//right
 				if(e.keyCode == 39){
 					if(that.paneInControl == "homepage"){
-						$(".arrow#right").click();
+						$(".arrow.right.carousel").click();
 					}
 					if(that.paneInControl == "subpage"){
 						$('a#next').click();
@@ -482,10 +479,13 @@ $.App.curtainCarousel = {
 
 			$("#cover-flow nav a").click(function(e) {
 				e.preventDefault();
-				that.onCoverClick(this);
+
+				if(!$(this).hasClass("filer")){
+					that.onCoverClick(this);
+				}
 			});
 
-			$("#cover-flow nav a").mouseover(function() {
+			$("#cover-flow nav a:not('.filer')").mouseover(function() {
 				$(this).addClass("hover");
 				that.switchToColor(this);
 			}).mouseout(function(){

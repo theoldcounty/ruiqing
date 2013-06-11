@@ -18,10 +18,9 @@ $.App.swiperHandler = {
 		var that = this;
 
 		$(".pagination .swiper-pagination-switch").click(function(e) {
-			
 			var swiperId = $(this).closest('.swiper-container').attr("id");
 			that.getSwiper(swiperId).swipeTo($(this).index());
-		});		
+		});
 	},
 	buildSwiper: function(holder, newId, contentArray){
 		$(holder).wrapInner('<div id="'+newId+'" class="swiper-container" data-swiper="true" data-orientation="horizontal" data-loop="true"/>');
@@ -39,7 +38,7 @@ $.App.swiperHandler = {
 
 		var localArray = new Array();
 		var count = ($('#cover-flow nav a').length) -1;// do not consider dummy nav a
-		$('#cover-flow nav a').each(function(index) {			
+		$('#cover-flow nav a').each(function(index) {
 			var imgUrl = $(this).data("url");
 
 			var html = '<img src="'+imgUrl+'"/>';
@@ -49,12 +48,23 @@ $.App.swiperHandler = {
 				that.buildSwiper(".imgHolder", "fullgallery", localArray);
 			}
 		});
+
+		$(".arrow.left.marketing").click(function(e) {
+			var swiperId = $(this).closest('.swiper-container').attr("id");
+			that.getSwiper(swiperId).swipePrev();// run transition to previous slide
+		});
+
+		$(".arrow.right.marketing").click(function(e) {
+			var swiperId = $(this).closest('.swiper-container').attr("id");
+			that.getSwiper(swiperId).swipeNext();//run transition to next slide
+		});
+
 	},
 	invokeSwipers: function(){
-		var that = this;		
+		var that = this;
 		var localArray = new Array();
 
-		$('[data-swiper="true"]').each(function() {			
+		$('[data-swiper="true"]').each(function() {
 			var confiObj = {};
 				confiObj.mode = $(this).data("orientation");
 				confiObj.pagination = '#'+$(this).attr("id")+' .pagination';

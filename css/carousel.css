@@ -15,22 +15,18 @@
 		text-indent: 9999px;
 	}
 
-	.arrow#left {
+	.arrow.left {
 		left: 20px;
 		background-position: 0 -51px;
 	}
 
-	.arrow#right {
+	.arrow.right {
 		right: 20px;
 		background-position: -50px -51px;
 	}
 
-	.arrow#left.disable {
+	.arrow.left.disable {
 		background-position: 0px -101px;
-	}
-
-	.arrow.flowtime {
-		background-position-y: -206px!important;
 	}
 
 	.wrap1, .wrap2 {
@@ -69,7 +65,7 @@
 	#cover-flow nav a.filer {
 		width:2000px;
 		background: #ffffff;
-		cursor: inherit;
+		cursor: default;
 	}
 
 	#cover-flow nav img {
