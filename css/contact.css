@@ -1,0 +1,30 @@
+
+
+	.contactform {
+		float: right;
+		width: 40%;
+		background: red;
+		padding: 0.5%;
+		height: 625px;
+		margin-right: 15%;
+		margin-top: -65px;
+		padding-top: 185px;
+	}
+
+
+	input[type="text"] {
+		width: 96%;
+		border: 0;
+		padding: 2%;
+	}
+
+	textarea {
+		width: 96%;
+		border: 0;
+		padding: 2%;
+	}
+
+	form{
+		margin: 0;
+		padding: 0;		
+	}

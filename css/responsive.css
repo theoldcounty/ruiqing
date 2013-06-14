@@ -1,0 +1,222 @@
+
+
+
+
+
+
+	/*responsive*/
+
+	/*standard mode*/
+	@media only screen and (min-width: 1280px){
+		#container{
+			background: red;
+		}
+
+		.swiper-container, .swiper-slide {
+			width: 1280px;
+			height: 800px;
+			background: red;
+		}
+	}
+
+	/*standard mode*/
+	@media only screen and (max-width: 1279px) and (min-width: 1264px){
+		#container{
+			background: red;
+			width: 1264px;
+		}
+
+
+		.swiper-container, .swiper-slide {
+			width: 1264px;
+			height: 800px;
+			background: red;
+		}
+	}
+
+
+	/*standard mode*/
+	@media only screen and (max-width: 850px) and (min-width: 641px){
+		#container{
+			background: red;
+		}
+
+
+		#marketingShots{
+			height:810px;
+		}
+	}
+
+	/*ipad mode*/
+	@media only screen and (max-width: 640px) and (min-width: 451px){
+		#container{
+			background: green;
+			width: 640px;
+		}
+
+		.swiper-container, .swiper-slide {
+			width: 640px;
+			height: 415px;
+			background: red;
+		}
+
+		#cover-flow {
+			height: 415px!important;
+		}
+
+		#cover-flow nav a {
+			width: 95px!important;
+		}
+
+		#marketingShots{
+			height:415px;
+		}
+
+
+
+		.goldFish {
+			background-image: url("../images/parallax1/mobile/fish.png");
+			width: 459px;
+			left: 27px;
+		}
+
+		.gourd {
+			background-image: url("../images/parallax1/mobile/gourd.png");
+			width: 333px;
+			left: 576px;
+		}
+
+		.coin1 {
+			background-image: url("../images/parallax1/mobile/coin1.png");
+			width: 100px;
+			left: 882px;
+		}
+
+		.coin2 {
+			background-image: url("../images/parallax1/mobile/coin2.png");
+			width: 152px;
+			left: 514px;
+		}
+
+		.coin3 {
+			background-image: url("../images/parallax1/mobile/coin3.png");
+			width: 100px;
+			left: 377px;
+		}
+
+
+
+
+
+		.tigergold {
+			background-image: url("../images/parallax2/mobile/tigergold.png");
+			width: 488px;
+			left: 510px;
+		}
+
+		.bunchincense {
+			background-image: url("../images/parallax2/mobile/bunchincense.png");
+			width: 252px;
+			left: 307px;
+		}
+
+		.incensestick {
+			background-image: url("../images/parallax2/mobile/incense.png");
+			width: 445px;
+			left: 703px;
+		}
+
+
+
+
+		.buddah {
+			background-image: url("../images/parallax3/mobile/buddah.png");
+			width: 497px;
+			left: 221px;
+		}
+
+		.bamboo {
+			background-image: url("../images/parallax3/mobile/bamboo.png");
+			width: 463px;
+			left: -17px;
+		}
+
+		.plant {
+			background-image: url("../images/parallax3/mobile/plant.png");
+			width: 394px;
+			left: 636px;
+		}
+
+		.leaf1 {
+			background-image: url("../images/parallax3/mobile/leaf1.png");
+			width: 244px;
+			left: 548px;
+		}
+
+
+		.leaf2 {
+			background-image: url("../images/parallax3/mobile/leaf2.png");
+			width: 191px;
+			left: 1038px;
+		}
+
+	}
+
+	/*mobile mode*/
+	@media only screen and (max-width: 450px) and (min-width: 351px){
+		#container{
+			background: pink;
+			width: 450px;
+		}
+
+		.swiper-container, .swiper-slide {
+			width: 450px;
+			height: 241px;
+			background: red;
+		}
+	}
+
+
+
+
+	/*mobile mode*/
+	@media only screen and (max-width: 350px){
+		#container{
+			background: pink;
+			width: 350px;
+		}
+
+		.swiper-container, .swiper-slide {
+			width: 350px;
+			height: 215px;
+			background: red;
+		}
+
+		#marketingShots{
+			height:230px;
+		}
+
+		#cover-flow nav a {
+			width: 65px!important;
+		}
+
+		#cover-flow {
+			height: 220px!important;
+		}
+
+
+
+
+		#menu{
+			width: 117px;
+			position: absolute;
+			right: 0;
+			padding-top: 16px;
+		}
+
+		#menu li{
+			border-right:0;
+		}
+
+	}
+

@@ -317,7 +317,7 @@ $.App.curtainCarousel = {
 
 			$('.arrow.carousel').removeClass("disable").addClass("enable");
 
-			$('.arrow.carousel').show();
+			//$('.arrow.carousel').show();
 
 			$('#cover-flow nav').show();
 			that.animateWraps("close", displacement, duration, function(){
@@ -325,6 +325,7 @@ $.App.curtainCarousel = {
 				that.unwrapTheBars(2);
 				that.reWrapNav();
 
+				that.checkArrowStates();
 				$('.arrow.carousel').show();
 			});
 		},

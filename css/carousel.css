@@ -37,7 +37,7 @@
 	#cover-flow {
 		overflow: hidden;
 		height: 800px;
-		width: 1200px;
+		width: 100%;
 	}
 
 	#cover-flow nav {
@@ -63,7 +63,7 @@
 		text-decoration: none;
 	}
 	#cover-flow nav a.filer {
-		width:2000px;
+		width:3000px!important;
 		background: #ffffff;
 		cursor: default;
 	}

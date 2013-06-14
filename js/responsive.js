@@ -67,12 +67,12 @@ $.App.responsive = {
 		var screenwidth = this.getScreenWidth();
 		console.log("screenwidth", screenwidth);
 
-		$('#cover-flow').css("width", screenwidth);
-		$('.pagination').css("width", screenwidth);
+		//$('#cover-flow').css("width", screenwidth);
+		//$('.pagination').css("width", screenwidth);
 
 		//$('.swiper-container').css("width", screenwidth);
 		//$('.swiper-slide').css("width", screenwidth);
-		
+
 	},
 	init: function(){
 		var that = this;

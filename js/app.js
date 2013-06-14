@@ -28,6 +28,8 @@ $.App ={
 		$.App.curtainCarousel.init();
 		$.App.swiperHandler.init();
 
+		$.App.accordion.init();
+
 		//this.addMenuListener();
 	},
 	loadJsDynamically: function(filename){
