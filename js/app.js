@@ -30,7 +30,7 @@ $.App ={
 
 		$.App.accordion.init();
 
-		//this.addMenuListener();
+		this.menuListener();
 	},
 	loadJsDynamically: function(filename){
 		var fileref=document.createElement('script');
@@ -40,6 +40,22 @@ $.App ={
 		if (typeof fileref!="undefined"){
 			$('.jsholder').append(fileref);
 		}
+	},
+	menuListener: function(){
+		var that = this;
+		var $navigation = $('#menu li');
+
+		window.setTimeout(function() {
+			that.highlightMenuItem($navigation.find('a').first());
+		}, 200);
+
+		$navigation.find('a').on('mouseover', function() {
+			that.highlightMenuItem($(this));
+		});
+	},
+	highlightMenuItem: function($item){
+		var widthOfItem = $item.width();
+		$('#nav-pointer').stop().animate({ left: $item.position().left + (widthOfItem/2) - 5 }, 500, 'easeOutBack');
 	},
 	isResponsiveBrowser: true,
 	browserCheck: function(){

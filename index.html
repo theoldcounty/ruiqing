@@ -27,12 +27,16 @@
 	<script src="js/accordion.js" type="text/javascript"></script>
 
 	<link rel="stylesheet" type="text/css" href="css/global.css"/>
+	<link rel="stylesheet" type="text/css" href="css/introduction.css"/>
+	<link rel="stylesheet" type="text/css" href="css/marketingshots.css"/>
 	<link rel="stylesheet" type="text/css" href="css/carousel.css"/>
 	<link rel="stylesheet" type="text/css" href="css/idangerous.swiper.css"/>
 	<link rel="stylesheet" type="text/css" href="css/responsive.css"/>
 	<link rel="stylesheet" type="text/css" href="css/parallax.css"/>
 	<link rel="stylesheet" type="text/css" href="css/accordion.css"/>
 	<link rel="stylesheet" type="text/css" href="css/contact.css"/>
+	<link rel="stylesheet" type="text/css" href="css/testimonials.css"/>
+	<link rel="stylesheet" type="text/css" href="css/fonts.css"/>
 														
 	<title>Rui Qing</title>
 
@@ -47,11 +51,12 @@
 					<li><a href="#parallaxTwo">Health</a></li>
 					<li><a href="#parallaxThree">Culture</a></li>
 					<li><a href="#gallery">Gallery</a></li>
-					<li><a href="#testimonials">testimonials</a></li>
-					<li><a href="#about">about</a></li>
-					<li><a href="#contact">contact</a></li>
+					<li><a href="#testimonials">Testimonials</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#contact">Contact</a></li>
 				</ul>
 				<!--menu-->
+				<div id="nav-pointer"></div>
 			</div>
 			
 
@@ -63,39 +68,32 @@
 						<div class="overlayedContent">
 							Feng Shui stuff
 						</div>
-						<div class="backgroundImage"><img src="http://images.hemmings.com/wp-content/uploads//2012/05/Gatsby-Times-Square-scene.jpg"></div>
+						<div class="backgroundImage"><img src="content/composition1.jpg"></div>
 					</section>
 					<!--introduction-->
-
 
 
 					<!--marketingShots-->
 					<section id="marketingShots">
 						<div class="overlayedContent">
 
-							caroseul content
-
 								<div data-swiper="true" data-orientation="horizontal" data-loop="true" id="marketinggallery" class="swiper-container">
 								  <div class="swiper-wrapper">
-								      <!--First Slide-->
-								      <div class="swiper-slide">
-								        <!-- Any HTML content of the first slide goes here -->
-								        test1
+
+								      <div class="swiper-slide light compass">
+								      	<h2>Calculate to improve your well-being</h2>
+								      	<img src="content/marketingshots/marketing1.jpg" alt="marketing1"/>
 								      </div>
 
-								      <!--Second Slide-->
-								      <div class="swiper-slide">
-								        <!-- Any HTML content of the second slide goes here -->
-								        test2
+								      <div class="swiper-slide dark case">
+								        <h2>Unlock the mystery to a successful marriage</h2>
+								      	<img src="content/marketingshots/marketing2.jpg" alt="marketing2"/>
 								      </div>
 
-								      <!--Third Slide-->
-								      <div class="swiper-slide">
-								        <!-- Any HTML content of the third slide goes here -->
-								        test3
+								      <div class="swiper-slide dark buddah">
+								        <h2>Enjoy the secret to a happy life.</h2>
+								      	<img src="content/marketingshots/marketing3.jpg" alt="marketing3"/>
 								      </div>
-								      <!--Etc..-->
-
 
 								  </div>
 									<div class="pagination"></div>
@@ -115,8 +113,6 @@
 					<section id="parallaxOne">
 						<div class="overlayedContent">
 
-							caroseul content
-
 
 							<div class="coloumn">
 								<h2>Kabelba um der e rkennt nis</h2>
@@ -124,7 +120,6 @@
 
 								<div>content content content content content content content content content content content content content content content content content content content content</div>
 							</div>
-
 
 
 							<div class="parallaxobjs">
@@ -147,7 +142,6 @@
 					<section id="parallaxTwo">
 						<div class="overlayedContent">
 
-							caroseul content
 
 							<div class="coloumn">
 								<h2>Kabelba um der e rkennt nis</h2>
@@ -168,15 +162,10 @@
 					<!--parallaxTwo-->
 
 
-
-
-
-
 					<!--parallaxThree-->
 					<section id="parallaxThree">
 						<div class="overlayedContent">
 
-							caroseul content
 
 							<div class="coloumn">
 								<h2>Kabelba um der e rkennt nis</h2>
@@ -204,11 +193,9 @@
 					<section id="gallery">
 						<div class="overlayedContent">
 
-							gallery content
 								<section id="cover-flow">
 									<div class="arrow left carousel">LEFT</div>
 									<div class="arrow right carousel">RIGHT</div>
-
 
 									<nav>
 										<a class="child" href="#" title="title1" data-url="http://vancitypretty.com/wp-content/uploads/2013/04/GG-17892R.jpg">
@@ -248,36 +235,9 @@
 									</nav>
 									<div id="fullspread">
 										<div class="back"><a href="#"><img src="images/backtostrips.png"></a></div>
-										<div class="imgHolder">
-
-
-												<!--
-												<div data-swiper="true" data-orientation="horizontal" data-loop="true" id="fullgallery" class="swiper-container">
-												  <div class="swiper-wrapper">
-
-												      <div class="swiper-slide">
-												        test1
-												      </div>
-
-												      <div class="swiper-slide">
-												        test2
-												      </div>
-
-												     <div class="swiper-slide">
-												        test3
-												      </div>
-
-												  </div>
-												  <div class="pagination"></div>
-												</div>
-											-->
-
-										</div>
+										<div class="imgHolder"></div>
 									</div>
 								</section>
-
-
-
 
 						</div>
 						<div class="backgroundImage"><img src="https://evbdn.eventbrite.com/s3-s3/eventlogos/12159759/greatgatsbyposterleosm.jpg"></div>
@@ -290,15 +250,29 @@
 					<section id="testimonials">
 						<div class="overlayedContent">
 
+							<!--wrappers-->
+							<div class="wrappers">
 							testimonials content
 
 
+							<ol class="audiolist">
+								<li>Intro (produced by Robbie Deng)</li>
+								<li>Feng Shui stuff 2</li>
+								<li>Feng Shui stuff 2</li>
+								<li>Feng Shui stuff 2</li>
+								<li>Feng Shui stuff 2</li>
+								<li>Feng Shui stuff 2</li>
+								<li>Feng Shui stuff 2</li>
+								<li>Feng Shui stuff 2</li>
+							</ol>	
+
+							</div>
+							<!--wrappers-->	
+
 						</div>
-						<div class="backgroundImage"><img src="http://pmcmovieline.files.wordpress.com/2013/04/gatsby-carousel.jpg"></div>
+						<div class="backgroundImage"><img src="images/testimonialsbackground.jpg"></div>
 					</section>
 					<!--testimonials-->
-
-
 
 
 					<!--about-->
@@ -318,8 +292,6 @@
 
 								<div class="accordioncontainer">
 									<h4>Title</h4>
-
-
 
 
 									<div data-accordion="true" id="accordion">
@@ -349,11 +321,6 @@
 										ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
 										lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
 										</p>
-										<ul>
-										  <li>List item one</li>
-										  <li>List item two</li>
-										  <li>List item three</li>
-										</ul>
 									  </div>
 									  <h3>Section 4</h3>
 									  <div>
@@ -376,7 +343,7 @@
 							<!--wrappers-->	
 
 						</div>
-						<div class="backgroundImage"><img src="http://www.neontommy.com/sites/default/files/the-great-gatsby-2012-movie-trailer-0_0.jpg?1337890903"></div>
+						<div class="backgroundImage"><img src="images/contactabout.jpg"></div>
 					</section>
 					<!--about-->
 
@@ -388,21 +355,14 @@
 
 							<!--wrappers-->
 							<div class="wrappers">
-								<div class="coloumn">
-									<h2>Kabelba um der e rkennt nis</h2>
-									<h3>sub title sub title</h3>
-
-									<div>content content content content content content content content content content content content content content content content content content content content</div>
-								</div>
-
 								<div class="contactform">
-									<h2>Kabelba um der e rkennt nis</h2>
+									<h2>Need more information?</h2>
 
 									<form>
-										<input type="text" name="name"/>
-										<input type="text" name="email"/>
-										<textarea name="message"></textarea>
-										<input type="checkbox" name="subscribe"/>
+										<input type="text" name="name" placeholder="Enter your name"/>
+										<input type="text" name="email" placeholder="Enter your email address"/>
+										<textarea name="message" placeholder="Enter your message" rows="10"></textarea>
+										<input type="checkbox" name="subscribe"/><label>Subscribe to our newsletter</label>
 										<input type="submit" name="submit" value="Send"/>
 									</form>
 
@@ -410,30 +370,30 @@
 							</div>
 							<!--wrappers-->
 
+		
+							<div class="socialpack">
+								<div class="wrapper">
+									<div class="address">Address: Era tasd asidja siodjsaid</div>
+									<div class="email">Email: hello@ruiqing.com</div>
+									<div class="phone">Phone: 00324032 432</div>
+								</div>
+
+								<ul class="socialIcons">
+									<li class="facebook"><a href="#"></a></li>
+									<li class="twitter"><a href="#"></a></li>
+									<li class="linkedin"><a href="#"></a></li>
+								</ul>
+							</div>							
+
 						</div>
-						<div class="backgroundImage"><img src="http://suchabooknerd.files.wordpress.com/2013/05/gatsby.jpg"></div>
+						<div class="backgroundImage"><img src="images/contactbackground.jpg"></div>
 					</section>
 					<!--contact-->
 
 			</div>
 			<!--content-->
 
-
-			<div id='footer' class="lang_gb">
-				test
-
-				Address: Era tasd asidja siodjsaid,
-				Email: hello@ruiqing.com
-				Phone: 00324032 432
-
-
-				<ul>
-					<li></li>
-				</ul>
-
-
-			</div>
-
+			<div id='footer' class="lang_gb"></div>
 
 		</div>
 	</body>

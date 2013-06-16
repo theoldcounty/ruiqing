@@ -12,28 +12,29 @@
 	margin-top: 2px;
 	padding: .5em .5em .5em .7em;
 	min-height: 0;
+	margin-bottom: 21px;
+	color: #8e8e8e;
 }
 
 
 .ui-widget-content {
-	border: 1px solid #aaaaaa;
-	background: #ffffff;
-	color: #222222;
+	color: #8e8e8e;
 }
 
 .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
-	border: 1px solid #d3d3d3;
-	background: #e6e6e6;
+	border: 0;
+	box-shadow: 3px 1px 10px 2px rgba(0,0,0,0.1);
 	font-weight: normal;
 	color: #555555;
 }
 
 
 .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active {
-	border: 1px solid #aaaaaa;
-	background: #ffffff;
+	/*border: 1px solid #aaaaaa;
+	background: #ffffff;*/
 	font-weight: normal;
 	color: #212121;
+	box-shadow: -1px -10px 20px -6px rgba(0,0,0,0.1);
 }
 
 

@@ -1,0 +1,28 @@
+
+	#marketingShots{
+		height: 820px;
+	}
+
+
+	#marketinggallery .swiper-wrapper .swiper-slide{
+		position: relative;
+	}
+
+	#marketinggallery h2{
+		position: absolute;
+		top: 526px;
+		width: 273px;
+		left: 120px;
+		font-size: 26px;
+		font-family: simenes serif;
+	}
+		
+	#marketinggallery .dark h2{
+		color: #2c2c2c;	
+	}											
+
+	#marketinggallery .light h2{
+		color: #ffffff;
+	}
+
+

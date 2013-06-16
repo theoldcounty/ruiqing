@@ -102,3 +102,12 @@
 		right: 28px;
 		z-index: 2;
 	}
+
+	.swiper-wrapper{
+		width: 1280px;
+		height: 600px;
+	}
+	.swiper-slide{
+		width: 1280px;
+		height: 600px;
+	}

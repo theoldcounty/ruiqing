@@ -7,7 +7,7 @@
 	/*Global Styles*/
 	html, body {
 		font-size: 12px;
-		color: #ffffff;
+		color: #8e8e8e;
 		font-family:Arial, Helvetica, Verdana, sans-serif;
 		width: 100%;
 		padding:0;
@@ -40,6 +40,10 @@
 		font-size:12px;
 	}
 
+	h4{
+		font-size:12px;
+		color: #8e8e8e;
+	}	
 
 
 	/* global nav */
@@ -48,22 +52,23 @@
 	}
 
 	#menu {
-		background: #000;
-		color: #fff;
-		padding: 10px;
-		list-style-type: none;
 		margin: 0;
-		text-transform: uppercase;
-		z-index: 1;
-		position: relative;
+		padding: 0;
+		overflow: hidden;
+		background: url('../images/menustrip.png') 0 0 repeat-x;
+		width: 60%;
+		margin-left: auto;
+		margin-right: auto;
+		height: 58px;
+		padding-top: 34px;
 	}
 
 	#menu li {
-		border-right: 1px solid #ec2337;
 		display: inline-block;
 		padding-left: 11px;
 		padding-right: 11px;
 		line-height: 12px;
+		float: left;
 	}
 
 	#menu li:nth-last-child(1) {
@@ -71,15 +76,24 @@
 	}
 
 	#menu li a {
-		color: #fff;
+		color: #ffffff;
 	}
 
 	#menu li a:active, #menu li a:hover {
-		color: #ec2337;
+		color: #f0c87d;
 	}
 
 	#menu li a.selected{
-		color: #ec2337;
+		color: #f0c87d;
+	}
+
+	#nav-pointer{
+		background: url('../images/marker.png') 50% 1px no-repeat;
+		height: 10px;
+		width: 10px;
+		position: absolute;
+		top: 18px;
+		left: 141px;
 	}
 
 	#footer{
@@ -89,7 +103,6 @@
 		background: #000000;
 	}
 
-
 	#container{
 		background: brown;
 		position:relative;
@@ -97,7 +110,6 @@
 		margin-left:auto;
 		margin-right:auto;
 	}
-
 
 	section{
 		height:auto;
@@ -124,23 +136,10 @@
 
 	#header{
 		top: 0;
+		left:0;
 		position: fixed;
 		width: 100%;
 		z-index: 2;
-	}
-
-	#menu{
-		margin: 0;
-		padding: 0;
-		overflow: hidden;
-		background: blue;
-		width: 80%;
-		margin-left: auto;
-		margin-right: auto;
-	}
-
-	#menu li{
-		float: left;
 	}
 
 	.accordioncontainer{
@@ -153,23 +152,14 @@
 		width: 17%;
 		float: left;
 		margin-left: 10%;
+		border-bottom: 1px solid #d5d5e7;
+		padding-left: 1%;
+		padding-right: 1%;
+		padding-bottom: 20px;
 	}
 
 	.wrappers{
 		overflow: hidden;
 		padding: 5%;
 	}
-
-
-
-
-
-	#marketingShots{
-		height: 820px;
-	}
-
-
-
-
-											
 
