@@ -8,7 +8,19 @@
 	padding: 0;
 }
 
-.audiolist li{
-	background: red;
-	list-style-type: none;
+.audiolist li {
+	background: grey;
+	list-style-type:none;
+}
+.audiolist li:nth-child(2n+2){
+	background: green;
+}
+
+.audiolist li:hover{
+	background: blue;
+}
+
+.audiolist li a{
+	display: block;
+	padding: 4px;
 }
