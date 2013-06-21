@@ -1,6 +1,14 @@
 
 
-
+.accordioncontainer h4{
+	text-align: right;
+	font-size: 36px;
+	font-family: 'siemens_sansregular', Arial;
+	line-height: 36px;
+	margin: 0;
+	margin-bottom: 15px;
+	font-weight: normal;	
+}
 
 
 
@@ -13,7 +21,10 @@
 	padding: .5em .5em .5em .7em;
 	min-height: 0;
 	margin-bottom: 21px;
-	color: #8e8e8e;
+	color: #9f9f9f;
+	font-family: 'siemens_serifbold', Arial;
+	font-size: 19px;
+	line-height: 19px;
 }
 
 

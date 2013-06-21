@@ -34,7 +34,12 @@
 		box-shadow: inset 1px 5px 16px 1px rgba(0,0,0,0.1);
 
 		margin: 0;
-		margin-bottom: 11px;
+		margin-bottom: 13px;
+
+
+		font-family: 'siemens_sansitalic';
+		font-size:14px;	
+		color: #6e6e6e;			
 
 	}
 
@@ -42,6 +47,7 @@
 		width: 96%;
 		border: 0;
 		padding: 2%;
+		margin-bottom: 13px;
 
 		background: rgb(221,221,221); /* Old browsers */
 		/* IE9 SVG, needs conditional override of 'filter' to 'none' */
@@ -55,6 +61,10 @@
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dddddd', endColorstr='#e7e7e7',GradientType=0 ); /* IE6-8 */
 
 		box-shadow: inset 1px 5px 16px 1px rgba(0,0,0,0.1);
+
+		font-family: 'siemens_sansitalic';
+		font-size:14px;	
+		color: #6e6e6e;	
 	}
 
 	form{
@@ -62,12 +72,47 @@
 		padding: 0;		
 	}
 
+	label {
+		font-family: 'siemens_sansitalic';
+		font-size:14px;
+		color: #6e6e6e;
+
+		bottom: 6px;
+		left: 10px;
+		position: relative;	
+	}
+
+	input[type="checkbox"] {
+		width: 20px;
+		height: 20px;
+
+		margin: 0;
+		padding: 0;
+
+		background: rgb(221,221,221); /* Old browsers */
+		/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+		background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2RkZGRkZCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iI2U1ZTVlNSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlN2U3ZTciIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+		background: -moz-linear-gradient(top,  rgba(221,221,221,1) 0%, rgba(229,229,229,1) 50%, rgba(231,231,231,1) 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(221,221,221,1)), color-stop(50%,rgba(229,229,229,1)), color-stop(100%,rgba(231,231,231,1))); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  rgba(221,221,221,1) 0%,rgba(229,229,229,1) 50%,rgba(231,231,231,1) 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  rgba(221,221,221,1) 0%,rgba(229,229,229,1) 50%,rgba(231,231,231,1) 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  rgba(221,221,221,1) 0%,rgba(229,229,229,1) 50%,rgba(231,231,231,1) 100%); /* IE10+ */
+		background: linear-gradient(to bottom,  rgba(221,221,221,1) 0%,rgba(229,229,229,1) 50%,rgba(231,231,231,1) 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dddddd', endColorstr='#e7e7e7',GradientType=0 ); /* IE6-8 */
+
+		box-shadow: inset 1px 5px 16px 1px rgba(0,0,0,0.1);		
+	}	
+
 	input[type="submit"]{
-		background: blue;
+		font-family: 'siemens_sansitalic';
+		font-size:14px;
+
 		padding: 4px;
 		border: 1px solid black;
 		display: block;
-		width: 170px;
+
+		width: 129px;
+		height: 45px;
 		text-align: center;
 		margin-left: auto;
 		margin-right: auto;
@@ -85,13 +130,14 @@
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ececec', endColorstr='#cecece',GradientType=0 ); /* IE6-8 */
 
 		border:0;
-		box-shadow: 1px 1px 1px 0px rgba(161,161,161,0.8);
-		font-size:14px;
+		box-shadow: 1px 1px 1px 0px rgba(196,196,196,0.8);
+		margin-top: 20px;		
 	}
 
 	.contactform h2{
-		margin-left: auto;
-		margin-right: auto;
+		text-align: center;
+		font-size: 21px;
+		color: #888888;
 	}
 
 	.socialpack{
@@ -101,6 +147,8 @@
 		bottom: 0;
 		width: 100%;
 		box-shadow: 0px 11px 18px 6px rgba(0,0,0,0.4);
+		font-family: 'siemens_sansregular', Arial;
+		font-size: 18px;
 	}
 
 
@@ -185,8 +233,10 @@
 		padding: 0;
 		overflow: hidden;
 		position: absolute;
-		bottom: 94px;
-		left: 21%;
+		bottom: 62px;
+		left: 5%;
+		padding-left: 1%;
+		padding-right: 1%;
 		padding-bottom: 10px;
 		color:#7b7b7b;
 	}

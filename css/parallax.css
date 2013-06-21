@@ -6,20 +6,26 @@
 	/*parllax elements*/
 	#parallaxOne .coloumn{
 		position: absolute;
-		right: 70px;
 		top: 150px;
+		right: 4%;
 	}
 
 	#parallaxTwo .coloumn{
 		position: absolute;
-		left: 50px;
 		top: 150px;
+		left: 4%;
+		color: #ffffff;
+	}
+
+	#parallaxTwo .coloumn h2,
+	#parallaxTwo .coloumn h1{
+		color: #ffffff;
 	}
 
 	#parallaxThree .coloumn{
 		position: absolute;
-		right: 70px;
 		top: 150px;
+		right: 4%;
 	}
 
 
@@ -112,7 +118,7 @@
 	.buddah {
 		background-image: url("../images/parallax3/buddah.png");
 		width: 497px;
-		left: 221px;
+		left: 183px;
 	}
 
 	.bamboo {
@@ -123,19 +129,19 @@
 
 	.plant {
 		background-image: url("../images/parallax3/plant.png");
-		width: 394px;
-		left: 636px;
+		width: 401px;
+		left: 546px;
 	}
 
 	.leaf1 {
 		background-image: url("../images/parallax3/leaf1.png");
 		width: 244px;
-		left: 548px;
+		left: 493px;
 	}
 
 
 	.leaf2 {
 		background-image: url("../images/parallax3/leaf2.png");
 		width: 191px;
-		left: 1038px;
+		right: -1%;
 	}

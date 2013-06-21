@@ -30,18 +30,26 @@
 
 	h1{
 		font-size:16px;
+		line-height: 16px;
+		font-family: 'siemens_serifbold', Arial;
 	}
 
 	h2{
-		font-size:14px;
+		font-size: 27px;
+		line-height: 27px;
+		font-family: 'siemens_serifbold', Arial;
+		color: #111111;
 	}
 
 	h3{
-		font-size:12px;
+		font-size: 17px;
+		line-height: 17px;
+		font-family: 'siemens_sansbold_italic', Arial;
 	}
 
 	h4{
 		font-size:12px;
+		font-family: 'siemens_serifbold', Arial;
 		color: #8e8e8e;
 	}	
 
@@ -55,12 +63,12 @@
 		margin: 0;
 		padding: 0;
 		overflow: hidden;
-		background: url('../images/menustrip.png') 0 0 repeat-x;
-		width: 60%;
+		width: 80%;
 		margin-left: auto;
 		margin-right: auto;
-		height: 58px;
+		height: 24px;
 		padding-top: 34px;
+		float: left;
 	}
 
 	#menu li {
@@ -94,6 +102,26 @@
 		position: absolute;
 		top: 18px;
 		left: 141px;
+	}
+
+	#contactdetails{
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		float: right;
+		width: 20%;
+		padding-top: 23px;
+		color: #ffffff;
+	}
+	#contactdetails li{
+		display: inline-block;
+		padding-left: 11px;
+		padding-right: 11px;
+		line-height: 12px;
+		float: left;		
+	}
+	#contactdetails a{
+		color: #ffffff;
 	}
 
 	#footer{
@@ -136,26 +164,33 @@
 
 	#header{
 		top: 0;
-		left:0;
+		left:9%;
 		position: fixed;
-		width: 100%;
+		width: 80%;
 		z-index: 2;
+		background: url('../images/menustrip.png') 0 0 repeat-x;
+		overflow: hidden;
 	}
 
 	.accordioncontainer{
 		width: 50%;
 		float: right;
 		margin-right: 10%;
+		font-family: 'siemens_sansregular', Arial;
+		font-size: 13px;
+		color:#8e8e8e;
 	}
 
 	.coloumn {
-		width: 17%;
+		width: 18%;
 		float: left;
-		margin-left: 10%;
 		border-bottom: 1px solid #d5d5e7;
 		padding-left: 1%;
 		padding-right: 1%;
 		padding-bottom: 20px;
+		font-size: 14px;
+		font-family: 'siemens_sansregular', Arial;
+		color: #1c1c1c;
 	}
 
 	.wrappers{
@@ -163,3 +198,17 @@
 		padding: 5%;
 	}
 
+
+	.dark h3,
+	.dark h2,
+	.dark h1,
+	.coloumn{
+		color: #ffffff;
+	}
+
+	.light h3,
+	.light h2,
+	.light h1,
+	.coloumn{
+		color: #2c2c2c;
+	}

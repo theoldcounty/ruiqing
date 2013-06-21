@@ -7,16 +7,13 @@
 
 $.App.accordion = {
 	init: function(){
-		
-		//$( "#accordion" ).accordion();
-
-		
-
-
 
 		$('[data-accordion="true"]').each(function(index) {
-			$(this).accordion();
+			var configuration = {
+				heightStyle: "content" 
+			};
+
+			$(this).accordion(configuration);
 		});
-		
 	}
 };

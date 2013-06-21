@@ -1,0 +1,11 @@
+
+@font-face {
+	font-family: 'BrandonGrotesque-Medium';
+	src: url('fonts/times_new_roman/times_new_roman.eot');
+	src: url('fonts/times_new_roman/times_new_roman.eot?#iefix') format('embedded-opentype'),
+			 url('fonts/times_new_roman/times_new_roman.woff') format('woff'),
+			 url('fonts/times_new_roman/times_new_roman.ttf') format('truetype'),
+			 url('fonts/times_new_roman/times_new_roman.svg#times_new_roman') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
