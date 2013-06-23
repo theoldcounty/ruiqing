@@ -1,0 +1,31 @@
+
+	.fs-img {
+		/* Image will default to the 240px CSS wide image
+		width:240px;
+		height:157px;
+		font-family: 'image-set( url(-small|-small-2x) 2x high-bandwidth )'; */
+		display:none;
+		/*border-left:4px solid yellow;*/
+	}
+
+	@media (max-width: 1000px) and (min-width: 640px) {
+		/* If the window's width is at least 600px wide then it should show the 320px CSS wide image */
+		.fs-img {
+			width:100%;
+			max-width:1000px;
+			font-family: 'image-set( url(-small|-medium), url(-small|-medium-2x) 2x high-bandwidth )';
+			/*border-left:4px solid blue;*/
+		}
+	}
+	
+
+
+	@media (min-width: 1001px) {
+		/* If the window's width is at least 800px wide then it should show the 480px CSS wide image, but set the image's max-width to 480px */
+		.fs-img {
+			width:100%;
+			max-width:1280px;
+			font-family: 'image-set( url(-small|-large), url(-small|-large-2x) 2x high-bandwidth )';				
+			/*border-left:4px solid green;*/
+		}
+	}

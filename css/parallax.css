@@ -145,3 +145,32 @@
 		width: 191px;
 		right: -1%;
 	}
+
+
+	.mobileparallax{
+		display: none;
+		overflow: hidden;
+		position: absolute;
+		top: 0;
+		z-index: 1;
+		height: 100%;
+		width: 100%;
+	}
+
+	.moneytheme {
+		background-image: url("../images/parallax3/leaf2.png");
+		width: 191px;
+		left: -1%;
+	}
+
+	.culturetheme {
+		background-image: url("../images/parallax3/leaf2.png");
+		width: 191px;
+		right: -1%;
+	}
+
+	.healththeme{
+		background-image: url("../images/parallax3/leaf2.png");
+		width: 191px;
+		left: -1%;
+	}

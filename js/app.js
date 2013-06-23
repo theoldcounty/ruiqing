@@ -29,7 +29,9 @@ $.App ={
 		$.App.swiperHandler.init();
 
 		$.App.accordion.init();
-
+		$.App.soundCloudHandler.init();
+		$.App.mobileHandler.init();
+		
 		this.menuListener();
 	},
 	loadJsDynamically: function(filename){

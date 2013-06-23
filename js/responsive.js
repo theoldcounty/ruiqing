@@ -33,6 +33,14 @@ $.App.responsive = {
 			$('html').addClass('tall').removeClass('medium').removeClass('short');
 		}
 
+		/*
+		if(screenwidth > this.ipadthreshold){
+			$('#header .wrapperelements').show();
+		}
+		else{
+			$('#header .wrapperelements').hide();	
+		}*/
+
 		if(screenwidth <= this.mobilethreshold ){
 			this.isMobile = true;
 			this.isIpad = false;
@@ -74,9 +82,19 @@ $.App.responsive = {
 		//$('.swiper-slide').css("width", screenwidth);
 
 	},
+	adaptSectionHeights: function(){
+		$('section').each(function( index ) {
+			var wrapperHeight = $(this).find('.wrappers').outerHeight(true);
+
+			console.log("wrapperHeight", wrapperHeight);
+			$(this).css("height", wrapperHeight);
+			//console.log( index + ": " + $(this).text() );
+		});
+	},
 	init: function(){
 		var that = this;
 		this.checkMode();
+		this.adaptSectionHeights();
 	},
 	onResize: function(){
 		this.checkMode();
