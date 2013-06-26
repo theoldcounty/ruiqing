@@ -8,8 +8,6 @@ swiperHandler
 
 $.App.swiperHandler = {
 	init: function(){
-		console.log("start swiper stuff");
-
 		this.buildGallerySwiper();
 		this.invokeSwipers();
 		this.bindEvents();

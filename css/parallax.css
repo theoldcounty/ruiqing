@@ -60,25 +60,25 @@
 
 	.gourd {
 		background-image: url("../images/parallax1/gourd.png");
-		width: 333px;
+		width: 345px;
 		left: 576px;
 	}
 
 	.coin1 {
 		background-image: url("../images/parallax1/coin1.png");
-		width: 100px;
+		width: 114px;
 		left: 882px;
 	}
 
 	.coin2 {
 		background-image: url("../images/parallax1/coin2.png");
-		width: 152px;
+		width: 158px;
 		left: 514px;
 	}
 
 	.coin3 {
 		background-image: url("../images/parallax1/coin3.png");
-		width: 100px;
+		width: 120px;
 		left: 377px;
 	}
 
@@ -94,20 +94,20 @@
 
 	.tigergold {
 		background-image: url("../images/parallax2/tigergold.png");
-		width: 488px;
+		width: 495px;
 		left: 510px;
 	}
 
 	.bunchincense {
 		background-image: url("../images/parallax2/bunchincense.png");
-		width: 252px;
-		left: 307px;
+		width: 444px;
+		left: 273px;
 	}
 
 	.incensestick {
 		background-image: url("../images/parallax2/incense.png");
-		width: 445px;
-		left: 703px;
+		width: 498px;
+		left: 665px;
 	}
 
 
@@ -117,32 +117,32 @@
 
 	.buddah {
 		background-image: url("../images/parallax3/buddah.png");
-		width: 497px;
+		width: 506px;
 		left: 183px;
 	}
 
 	.bamboo {
 		background-image: url("../images/parallax3/bamboo.png");
-		width: 463px;
-		left: -17px;
+		width: 637px;
+		left: -193px;
 	}
 
 	.plant {
 		background-image: url("../images/parallax3/plant.png");
-		width: 401px;
+		width: 414px;
 		left: 546px;
 	}
 
 	.leaf1 {
 		background-image: url("../images/parallax3/leaf1.png");
-		width: 244px;
+		width: 220px;
 		left: 493px;
 	}
 
 
 	.leaf2 {
 		background-image: url("../images/parallax3/leaf2.png");
-		width: 191px;
+		width: 211px;
 		right: -1%;
 	}
 

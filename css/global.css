@@ -25,6 +25,12 @@
 		outline: none;
 		border: 0px none transparent;
 	}
+
+	a{
+		color: grey;
+	}
+
+
 	img {
 		border: 0;
 	}
@@ -52,7 +58,7 @@
 		font-size:12px;
 		font-family: 'siemens_serifbold', Arial;
 		color: #8e8e8e;
-	}	
+	}
 
 
 	/* global nav */
@@ -119,7 +125,7 @@
 		padding-left: 11px;
 		padding-right: 11px;
 		line-height: 12px;
-		float: left;		
+		float: left;
 	}
 	#contactdetails a{
 		color: #ffffff;
@@ -175,7 +181,7 @@
 		position: absolute;
 		top: 0;
 		right: 0;
-		display: none;		
+		display: none;
 	}
 
 	#header .mobileclose a{
@@ -189,15 +195,15 @@
 		position: fixed;
 		top: 0;
 		right: 0;
-		display: none;	
+		display: none;
 	}
 	#header .mobilemenu a{
 		background: green;
 		width: 87px;
 		height: 25px;
 		display: block;
-	}	
-	#header .wrapperelements{		
+	}
+	#header .wrapperelements{
 		background: url('../images/menustrip.png') 0 0 repeat-x;
 		overflow: hidden;
 	}
@@ -231,7 +237,7 @@
 	#soundcloudholder{
 		background: #ffffff;
 		height: 174px;
-		overflow: hidden;	
+		overflow: hidden;
 	}
 
 
@@ -249,3 +255,7 @@
 		color: #2c2c2c;
 	}
 
+	.swiper-wrapper .swiper-slide img{
+		width: 100%;
+		height: auto;
+	}

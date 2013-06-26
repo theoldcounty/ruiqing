@@ -33,14 +33,6 @@ $.App.responsive = {
 			$('html').addClass('tall').removeClass('medium').removeClass('short');
 		}
 
-		/*
-		if(screenwidth > this.ipadthreshold){
-			$('#header .wrapperelements').show();
-		}
-		else{
-			$('#header .wrapperelements').hide();	
-		}*/
-
 		if(screenwidth <= this.mobilethreshold ){
 			this.isMobile = true;
 			this.isIpad = false;
@@ -70,25 +62,61 @@ $.App.responsive = {
 		this.pageRefine();
 	},
 	pageRefine: function(){
-		console.log("pageRefine");
-
 		var screenwidth = this.getScreenWidth();
-		console.log("screenwidth", screenwidth);
-
-		//$('#cover-flow').css("width", screenwidth);
-		//$('.pagination').css("width", screenwidth);
-
-		//$('.swiper-container').css("width", screenwidth);
-		//$('.swiper-slide').css("width", screenwidth);
-
+		this.loopSwipersInit();
 	},
 	adaptSectionHeights: function(){
-		$('section').each(function( index ) {
+		$('section').each(function(index){
 			var wrapperHeight = $(this).find('.wrappers').outerHeight(true);
-
-			console.log("wrapperHeight", wrapperHeight);
 			$(this).css("height", wrapperHeight);
-			//console.log( index + ": " + $(this).text() );
+		});
+	},
+	adaptSwipers: function(){
+		$('[data-swiper="true"]').each(function(index){
+			var imgHeight = $(this).find('.swiper-slide img').outerHeight(true);
+
+			//section parent
+			$(this).closest("section").css("height", imgHeight);
+
+			//swiper-container
+			$(this).css("height", imgHeight);
+
+			//swiper-wrapper
+			$(this).find(".swiper-wrapper").css("height", imgHeight);
+
+			//swiper-slide
+			$(this).find(".swiper-slide").css("height", imgHeight);
+		});
+	},
+	checkloadImg: function($img , pageReady){
+		var img_index = 0;
+		var img_length = $img.length;
+		$img.each(function() {
+			//Hidden images will not trigger the load event, duplicate images will not trigger either
+			if(window.getComputedStyle(this).display == 'none' || this.complete) {
+				img_length--;
+			}
+			else {
+				$(this).on('load error abort', function() {
+					img_index++;
+					if(img_index == img_length) {
+						pageReady("contents fully loaded in");
+					}
+				});
+			}
+		});
+
+		if(!img_length) {
+			pageReady("contents fully loaded in");
+		}
+	},
+	loopSwipersInit: function(){
+		var that = this;
+		$('[data-swiper="true"]').each(function(index){
+			var img = $(this).find('.swiper-slide').eq(0).find('img');
+			that.checkloadImg(img, function(msg){
+				that.adaptSwipers();
+			});
 		});
 	},
 	init: function(){
@@ -98,5 +126,6 @@ $.App.responsive = {
 	},
 	onResize: function(){
 		this.checkMode();
+		this.adaptSwipers();
 	}
 };
