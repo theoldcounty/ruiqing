@@ -63,7 +63,7 @@
 	}
 
 
-	@media only screen and (max-width: 1263px) and (min-width: 767px){
+	@media only screen and (max-width: 1263px) and (min-width: 750px){
 
 		#marketinggallery h2 {
 			font-size: 44px;
@@ -102,9 +102,6 @@
 		}
 
 
-
-
-
 		#contactdetails{
 			font-size: 11px;
 		}
@@ -122,70 +119,12 @@
 			display: block!important;
 		}
 
+
 	}
 
 
-
-	/*mobile mode*/
-	@media only screen and (max-width: 767px){
-		#marketingShots .arrow{
-			display:none;
-		}
-
-		.pagination .swiper-pagination-switch {
-			background-size: 100% auto;
-			width: 18px;
-			height: 19px;
-		}
-
-		.pagination .swiper-active-switch {
-			background-size: 100% auto;
-			width: 23px;
-			top: 1px;
-			position: relative;
-		}
-
-		.pagination {
-			bottom: 53px;
-			padding-top: 7px;
-		}
-
-		#header {
-			left: 0;
-			width: 100%;
-		}
-		#header .mobileclose{
-			display: block;
-		}
-		#header .mobilemenu{
-			display: block;
-		}
-		#header .wrapperelements{
-			background: red;
-			width: 100%;
-			display: none;
-		}
-
-		#menu {
-			height: auto;
-		}
-		#menu li {
-			width: 100%;
-		}
-
-		#contactdetails{
-			float: left;
-			width: 100%;
-		}
-
-		#contactdetails li{
-			width: 100%;
-		}
-
-		#nav-pointer{
-			display: none;
-		}
-
+	/*degrade paralax images for ipad portrait mode */
+	@media only screen and (max-width: 900px){
 
 
 		.goldFish {
@@ -246,6 +185,71 @@
 			background-image: url("../images/parallax3/mobile/leaf2.png")!important;
 		}
 
+
+	}		
+
+
+	/*mobile mode*/
+	@media only screen and (max-width: 750px){
+		#marketingShots .arrow{
+			display:none;
+		}
+
+		.pagination .swiper-pagination-switch {
+			background-size: 100% auto;
+			width: 18px;
+			height: 19px;
+		}
+
+		.pagination .swiper-active-switch {
+			background-size: 100% auto;
+			width: 23px;
+			top: 1px;
+			position: relative;
+		}
+
+		.pagination {
+			bottom: 53px;
+			padding-top: 7px;
+		}
+
+		#header {
+			left: 0;
+			width: 100%;
+		}
+		#header .mobileclose{
+			display: block;
+		}
+		#header .mobilemenu{
+			display: block;
+		}
+		#header .wrapperelements{
+			background: red;
+			width: 100%;
+			display: none;
+		}
+
+		#menu {
+			height: auto;
+		}
+		#menu li {
+			width: 100%;
+		}
+
+		#contactdetails{
+			float: left;
+			width: 100%;
+		}
+
+		#contactdetails li{
+			width: 100%;
+		}
+
+		#nav-pointer{
+			display: none;
+		}
+
+
 		section#gallery .transition{
 			height: 366px;
 		}
@@ -257,7 +261,7 @@
 	}
 
 	/*standard mode*/
-	@media only screen and (max-width: 836px) and (min-width: 770px){
+	@media only screen and (max-width: 836px) and (min-width: 750px){
 
 
 		#marketinggallery h2 {
@@ -336,7 +340,7 @@
 	/*ipad portrait 768px*/
 
 	/*ipad mode*/
-	@media only screen and (max-width: 766px) and (min-width: 451px){
+	@media only screen and (max-width: 750px) and (min-width: 451px){
 
 
 
@@ -416,7 +420,7 @@
 		}
 
 		.swiper-container, .swiper-slide {
-			width: 766px;
+			width: 100%;
 			height: 415px;
 			/*background: red;*/
 		}
@@ -440,6 +444,20 @@
 
 	/*mobile mode less 450px*/
 	@media only screen and (max-width: 450px){
+
+		.coloumn {
+			width: 45%!important;
+		}	
+					
+		.coloumn.fullbleed{
+			float: left;
+			width: 98%!important;
+		}
+
+		.wrappers{
+			width: 85%;
+		}
+
 
 		.pagination .swiper-pagination-switch {
 			background-size: 100% auto;
@@ -609,11 +627,8 @@
 		.socialpack{
 			font-size: 14px!important;
 		}
-		#about .coloumn,
-		#contact .coloumn{
-			float: left;
-			width: 98%;
-		}
+		
+
 
 		#about .accordioncontainer,
 		#contact .contactform{
@@ -633,6 +648,7 @@
 		#parallaxTwo .coloumn,
 		#parallaxThree .coloumn {
 			top: 17px!important;
+			width: 40%;
 		}
 
 		h2 {
@@ -644,7 +660,6 @@
 			line-height: 12px;
 		}
 		.coloumn {
-			width: 35%;
 			font-size: 12px;
 		}
 

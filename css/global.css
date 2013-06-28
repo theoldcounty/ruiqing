@@ -5,6 +5,9 @@
 */
 
 	/*Global Styles*/
+	html{
+		overflow-y: auto;
+	}
 
 	html, body {
 		font-size: 12px;
@@ -17,6 +20,7 @@
 
 	body{
 		background: grey;
+		overflow: hidden;
 	}
 
 	a,
@@ -80,8 +84,8 @@
 
 	#menu li {
 		display: inline-block;
-		padding-left: 11px;
-		padding-right: 11px;
+		padding-left: 6px;
+		padding-right: 6px;
 		line-height: 12px;
 		float: left;
 	}
@@ -180,8 +184,8 @@
 
 	#header{
 		top: 0;
-		left :8%;
-		width: 84%;
+		left :2%;
+		width: 96%;
 		position: fixed;
 		z-index: 3;
 	}
