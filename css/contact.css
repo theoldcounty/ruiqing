@@ -1,4 +1,7 @@
 
+	#contact{
+		background:#e5e5e5;
+	}
 
 	.contactform {
 		float: right;
@@ -38,8 +41,8 @@
 
 
 		font-family: 'siemens_sansitalic';
-		font-size:14px;	
-		color: #6e6e6e;			
+		font-size:14px;
+		color: #6e6e6e;
 
 	}
 
@@ -63,13 +66,13 @@
 		box-shadow: inset 1px 5px 16px 1px rgba(0,0,0,0.1);
 
 		font-family: 'siemens_sansitalic';
-		font-size:14px;	
-		color: #6e6e6e;	
+		font-size:14px;
+		color: #6e6e6e;
 	}
 
 	form{
 		margin: 0;
-		padding: 0;		
+		padding: 0;
 	}
 
 	label {
@@ -79,7 +82,7 @@
 
 		bottom: 6px;
 		left: 10px;
-		position: relative;	
+		position: relative;
 	}
 
 	input[type="checkbox"] {
@@ -100,8 +103,8 @@
 		background: linear-gradient(to bottom,  rgba(221,221,221,1) 0%,rgba(229,229,229,1) 50%,rgba(231,231,231,1) 100%); /* W3C */
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dddddd', endColorstr='#e7e7e7',GradientType=0 ); /* IE6-8 */
 
-		box-shadow: inset 1px 5px 16px 1px rgba(0,0,0,0.1);		
-	}	
+		box-shadow: inset 1px 5px 16px 1px rgba(0,0,0,0.1);
+	}
 
 	input[type="submit"]{
 		font-family: 'siemens_sansitalic';
@@ -131,7 +134,7 @@
 
 		border:0;
 		box-shadow: 1px 1px 1px 0px rgba(196,196,196,0.8);
-		margin-top: 20px;		
+		margin-top: 20px;
 	}
 
 	.contactform h2{
@@ -227,7 +230,7 @@
 		background-position: -101px -41px;
 	}
 
-	
+
 	.socialpack .wrapper{
 		margin: 0;
 		padding: 0;
