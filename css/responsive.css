@@ -15,7 +15,7 @@
 	/*responsive*/
 	@media only screen and (min-width: 1500px){
 		#container{
-			background: purple;
+			/*background: purple;*/
 			width: 1500px;
 		}
 
@@ -27,14 +27,14 @@
 	/*standard mode*/
 	@media only screen and (max-width: 1499px) and (min-width: 1280px){
 		#container{
-			background: red;
+			/*background: red;*/
 			width: 1280px;
 		}
 
 		.swiper-container, .swiper-slide {
 			width: 1280px;
 			height: 800px;
-			background: red;
+			/*background: red;*/
 		}
 		#header .wrapperelements{
 			display: block!important;
@@ -44,7 +44,7 @@
 	/*standard mode*/
 	@media only screen and (max-width: 1279px) and (min-width: 1264px){
 		#container{
-			background: red;
+			/*background: red;*/
 			width: 100%;
 			/*width: 1264px;*/
 		}
@@ -53,7 +53,7 @@
 		.swiper-container, .swiper-slide {
 			width: 1264px;
 			height: 800px;
-			background: red;
+			/*background: red;*/
 		}
 
 		#header .wrapperelements{
@@ -63,9 +63,9 @@
 	}
 
 
-	@media only screen and (max-width: 1263px) and (min-width: 837px){
+	@media only screen and (max-width: 1263px) and (min-width: 767px){
 
-	#marketinggallery h2 {
+		#marketinggallery h2 {
 			font-size: 44px;
 			line-height: 44px;
 		}
@@ -122,105 +122,34 @@
 			display: block!important;
 		}
 
-		.goldFish {
-			background-image: url("../images/parallax1/mobile/fish.png");
-			width: 307px!important;
-			left: 27px!important;
-			background-size: 100% auto;
-		}
-
-		.gourd {
-			background-image: url("../images/parallax1/mobile/gourd.png");
-			width: 238px!important;
-			left: 286px!important;
-			background-size: 100% auto;
-		}
-
-		.coin1 {
-			background-image: url("../images/parallax1/mobile/coin1.png");
-			width: 89px!important;
-			left: 76%!important;
-			background-size: 100% auto;
-		}
-
-		.coin2 {
-			background-image: url("../images/parallax1/mobile/coin2.png");
-			width: 111px!important;
-			left: 55%!important;
-			background-size: 100% auto;
-		}
-
-		.coin3 {
-			background-image: url("../images/parallax1/mobile/coin3.png");
-			width: 78px!important;
-			left: 25%!important;
-			background-size: 100% auto;
-		}
-
-
-		.tigergold {
-			background-image: url("../images/parallax2/mobile/tigergold.png");
-			width: 343px!important;
-			left: 45%!important;
-			background-size: 100% auto;
-		}
-
-		.bunchincense {
-			background-image: url("../images/parallax2/mobile/bunchincense.png");
-			width: 184px!important;
-			left: 38%!important;
-			background-size: 100% auto;
-		}
-
-		.incensestick {
-			background-image: url("../images/parallax2/mobile/incense.png");
-			width: 342px!important;
-			left: 60%!important;
-			background-size: 100% auto;
-		}
-
-
-		.buddah {
-			background-image: url("../images/parallax3/mobile/buddah.png");
-			width: 305px!important;
-			left: 12%!important;
-			background-size: 100% auto;
-		}
-
-		.bamboo {
-			background-image: url("../images/parallax3/mobile/bamboo.png");
-			width: 223px!important;
-			left: -17px!important;
-			background-size: 100% auto;
-		}
-
-		.plant {
-			background-image: url("../images/parallax3/mobile/plant.png");
-			width: 300px!important;
-			left: 21%!important;
-			background-size: 100% auto;
-		}
-
-		.leaf1 {
-			background-image: url("../images/parallax3/mobile/leaf1.png");
-			width: 168px!important;
-			left: 55%!important;
-			background-size: 100% auto;
-		}
-
-
-		.leaf2 {
-			background-image: url("../images/parallax3/mobile/leaf2.png");
-			width: 159px!important;
-			left: 88%!important;
-			background-size: 100% auto;
-		}
 	}
 
 
 
 	/*mobile mode*/
-	@media only screen and (max-width: 837px){
+	@media only screen and (max-width: 767px){
+		#marketingShots .arrow{
+			display:none;
+		}
+
+		.pagination .swiper-pagination-switch {
+			background-size: 100% auto;
+			width: 18px;
+			height: 19px;
+		}
+
+		.pagination .swiper-active-switch {
+			background-size: 100% auto;
+			width: 23px;
+			top: 1px;
+			position: relative;
+		}
+
+		.pagination {
+			bottom: 53px;
+			padding-top: 7px;
+		}
+
 		#header {
 			left: 0;
 			width: 100%;
@@ -256,10 +185,79 @@
 		#nav-pointer{
 			display: none;
 		}
+
+
+
+		.goldFish {
+			background-image: url("../images/parallax1/mobile/fish.png")!important;
+		}
+
+		.gourd {
+			background-image: url("../images/parallax1/mobile/gourd.png")!important;
+		}
+
+		.coin1 {
+			background-image: url("../images/parallax1/mobile/coin1.png")!important;
+		}
+
+		.coin2 {
+			background-image: url("../images/parallax1/mobile/coin2.png")!important;
+		}
+
+		.coin3 {
+			background-image: url("../images/parallax1/mobile/coin3.png")!important;
+		}
+
+
+
+
+		.tigergold {
+			background-image: url("../images/parallax2/mobile/tigergold.png")!important;
+		}
+
+		.bunchincense {
+			background-image: url("../images/parallax2/mobile/bunchincense.png")!important;
+		}
+
+		.incensestick {
+			background-image: url("../images/parallax2/mobile/incense.png")!important;
+		}
+
+
+
+
+		.buddah {
+			background-image: url("../images/parallax3/mobile/buddah.png")!important;
+		}
+
+		.bamboo {
+			background-image: url("../images/parallax3/mobile/bamboo.png")!important;
+		}
+
+		.plant {
+			background-image: url("../images/parallax3/mobile/plant.png")!important;
+		}
+
+		.leaf1 {
+			background-image: url("../images/parallax3/mobile/leaf1.png")!important;
+		}
+
+		.leaf2 {
+			background-image: url("../images/parallax3/mobile/leaf2.png")!important;
+		}
+
+		section#gallery .transition{
+			height: 366px;
+		}
+
+		section#marketingShots .transition{
+			height: 101px;
+		}
+
 	}
 
 	/*standard mode*/
-	@media only screen and (max-width: 836px) and (min-width: 641px){
+	@media only screen and (max-width: 836px) and (min-width: 770px){
 
 
 		#marketinggallery h2 {
@@ -322,7 +320,7 @@
 		}
 
 		#container{
-			background: red;
+			/*background: red;*/
 			width: 100%;
 		}
 
@@ -332,114 +330,13 @@
 		}
 
 
-
-
-		.goldFish {
-			background-image: url("../images/parallax1/mobile/fish.png");
-			width: 307px!important;
-			left: 27px!important;
-			background-size: 100% auto;
-		}
-
-		.gourd {
-			background-image: url("../images/parallax1/mobile/gourd.png");
-			width: 238px!important;
-			left: 286px!important;
-			background-size: 100% auto;
-		}
-
-		.coin1 {
-			background-image: url("../images/parallax1/mobile/coin1.png");
-			width: 89px!important;
-			left: 76%!important;
-			background-size: 100% auto;
-		}
-
-		.coin2 {
-			background-image: url("../images/parallax1/mobile/coin2.png");
-			width: 111px!important;
-			left: 55%!important;
-			background-size: 100% auto;
-		}
-
-		.coin3 {
-			background-image: url("../images/parallax1/mobile/coin3.png");
-			width: 78px!important;
-			left: 25%!important;
-			background-size: 100% auto;
-		}
-
-
-
-
-
-		.tigergold {
-			background-image: url("../images/parallax2/mobile/tigergold.png");
-			width: 343px!important;
-			left: 45%!important;
-			background-size: 100% auto;
-		}
-
-		.bunchincense {
-			background-image: url("../images/parallax2/mobile/bunchincense.png");
-			width: 184px!important;
-			left: 38%!important;
-			background-size: 100% auto;
-		}
-
-		.incensestick {
-			background-image: url("../images/parallax2/mobile/incense.png");
-			width: 342px!important;
-			left: 60%!important;
-			background-size: 100% auto;
-		}
-
-
-
-
-		.buddah {
-			background-image: url("../images/parallax3/mobile/buddah.png");
-			width: 305px!important;
-			left: 12%!important;
-			background-size: 100% auto;
-		}
-
-		.bamboo {
-			background-image: url("../images/parallax3/mobile/bamboo.png");
-			width: 223px!important;
-			left: -17px!important;
-			background-size: 100% auto;
-		}
-
-		.plant {
-			background-image: url("../images/parallax3/mobile/plant.png");
-			width: 300px!important;
-			left: 21%!important;
-			background-size: 100% auto;
-		}
-
-		.leaf1 {
-			background-image: url("../images/parallax3/mobile/leaf1.png");
-			width: 168px!important;
-			left: 55%!important;
-			background-size: 100% auto;
-		}
-
-
-		.leaf2 {
-			background-image: url("../images/parallax3/mobile/leaf2.png");
-			width: 159px!important;
-			left: 88%!important;
-			background-size: 100% auto;
-		}
-
 	}
 
 
 	/*ipad portrait 768px*/
 
 	/*ipad mode*/
-	@media only screen and (max-width: 640px) and (min-width: 451px){
+	@media only screen and (max-width: 766px) and (min-width: 451px){
 
 
 
@@ -481,15 +378,6 @@
 
 
 
-
-
-
-		.parallaxobjs{
-			display: none;
-		}
-		.mobileparallax{
-			display: block!important;
-		}
 		.coloumn {
 			z-index: 2;
 		}
@@ -522,15 +410,15 @@
 		}
 
 		#container{
-			background: green;
+			/*background: green;*/
 			width: 100%;
 			/*width: 640px;*/
 		}
 
 		.swiper-container, .swiper-slide {
-			width: 640px;
+			width: 766px;
 			height: 415px;
-			background: red;
+			/*background: red;*/
 		}
 
 		#cover-flow {
@@ -546,8 +434,128 @@
 		}
 	}
 
+
+
+
+
+	/*mobile mode less 450px*/
+	@media only screen and (max-width: 450px){
+
+		.pagination .swiper-pagination-switch {
+			background-size: 100% auto;
+			width: 18px;
+			height: 19px;
+		}
+
+		.pagination .swiper-active-switch {
+			background-size: 100% auto;
+			width: 23px;
+			top: 1px;
+			position: relative;
+		}
+
+		.pagination {
+			bottom: 7px;
+			padding-top: 7px;
+		}
+
+
+		.parallaxobjs{
+			display: none;
+		}
+		.mobileparallax{
+			display: block!important;
+		}
+
+		section#introduction .transition{
+			background: url("../images/mobile/transition1.png") 0 bottom no-repeat;
+			height: 40px;
+			z-index: 2;
+			position: absolute;
+			bottom: -17px;
+			width: 100%;
+		}
+
+
+		section#marketingShots .transition{
+			background: url("../images/mobile/transition2.png") 0 bottom no-repeat;
+			height: 35px;
+			z-index: 1;
+			position: absolute;
+			bottom: -12px;
+			width: 100%;
+		}
+
+
+
+		section#parallaxOne .transition{
+			background: url("../images/mobile/transition3.png") 0 bottom no-repeat;
+			height: 25px;
+			z-index: 1;
+			position: absolute;
+			bottom: -9px;
+			width: 100%;
+		}
+
+
+
+		section#parallaxTwo .transition{
+			background: url("../images/mobile/transition4.png") 0 bottom no-repeat;
+			height: 66px;
+			z-index: 1;
+			position: absolute;
+			bottom: -41px;
+			width: 100%;
+		}
+
+
+		section#parallaxThree .transition{
+			background: url("../images/mobile/transition5.png") 0 bottom no-repeat;
+			height: 23px;
+			z-index: 2;
+			position: absolute;
+			bottom: -14px;
+			width: 100%;
+		}
+
+
+		section#gallery .transition{
+			background: url("../images/mobile/transition6.png") 0 bottom no-repeat;
+			height: 127px;
+			z-index: 1;
+			position: absolute;
+			bottom: -105px;
+			width: 100%;
+		}
+
+
+		section#testimonials .transition{
+			background: url("../images/mobile/transition7.png") 0 bottom no-repeat;
+			height: 95px;
+			z-index: 1;
+			position: absolute;
+			bottom: -58px;
+			width: 100%;
+		}
+
+
+		section#about .transition{
+			background: url("../images/mobile/transition8.png") 0 bottom no-repeat;
+			height: 49px;
+			z-index: 1;
+			position: absolute;
+			bottom: -31px;
+			width: 100%;
+		}
+	}
+
+
+
+
+
+
 	/*mobile mode 450px*/
-	@media only screen and (max-width: 450px) and (min-width: 351px){
+	@media only screen and (max-width: 450px) and (min-width: 321px){
 
 		#marketinggallery h2 {
 			font-size: 30px;
@@ -642,13 +650,13 @@
 
 		#container{
 			background: pink;
-			width: 100%;
+			/*width: 100%;*/
 		}
 
 		.swiper-container, .swiper-slide {
 			width: 450px;
 			height: 241px;
-			background: red;
+			/*background: red;*/
 		}
 	}
 
@@ -656,7 +664,7 @@
 
 
 	/*mobile mode*/
-	@media only screen and (max-width: 350px){
+	@media only screen and (max-width: 320px){
 
 
 		#marketinggallery h2 {
@@ -664,8 +672,8 @@
 			line-height: 25px;
 		}
 		#marketingShots h1{
-			font-size: 23px;
-			line-height: 23px;
+			font-size: 19px;
+			line-height: 19px;
 		}
 
 		.compass h2{
@@ -772,13 +780,13 @@
 
 		#container{
 			background: pink;
-			width: 350px;
+			width: 320px;
 		}
 
 		.swiper-container, .swiper-slide {
-			width: 350px;
+			width: 320px;
 			height: 215px;
-			background: red;
+			/*background: red;*/
 		}
 
 		#marketingShots{

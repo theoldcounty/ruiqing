@@ -8,6 +8,7 @@
 		position: absolute;
 		top: 150px;
 		right: 4%;
+		z-index:2;
 	}
 
 	#parallaxTwo .coloumn{
@@ -15,6 +16,7 @@
 		top: 150px;
 		left: 4%;
 		color: #ffffff;
+		z-index:2;
 	}
 
 	#parallaxTwo .coloumn h2,
@@ -26,6 +28,7 @@
 		position: absolute;
 		top: 150px;
 		right: 4%;
+		z-index:2;
 	}
 
 
@@ -47,39 +50,37 @@
 		height: 100%;
 		z-index: 1;
 		background-repeat: no-repeat;
+				top:0;left:0;
+		width:100%;
+				margin: 0;
 	}
 
 
 
 
 	.goldFish {
-		background-image: url("../images/parallax1/fish.png");
-		width: 459px;
-		left: 27px;
+		background: url("../images/parallax1/fish.png") no-repeat fixed;
+		background-position-x: 1%!important;
 	}
 
 	.gourd {
-		background-image: url("../images/parallax1/gourd.png");
-		width: 345px;
-		left: 576px;
+		background: url("../images/parallax1/gourd.png") no-repeat fixed;
+		background-position-x: 46%!important;
 	}
 
 	.coin1 {
-		background-image: url("../images/parallax1/coin1.png");
-		width: 114px;
-		left: 882px;
+		background: url("../images/parallax1/coin1.png") no-repeat fixed;
+		background-position-x: 1%!important;
 	}
 
 	.coin2 {
-		background-image: url("../images/parallax1/coin2.png");
-		width: 158px;
-		left: 514px;
+		background: url("../images/parallax1/coin2.png") no-repeat fixed;
+		background-position-x: 35%!important;
 	}
 
 	.coin3 {
-		background-image: url("../images/parallax1/coin3.png");
-		width: 120px;
-		left: 377px;
+		background: url("../images/parallax1/coin3.png") no-repeat fixed;
+		background-position-x: 58%!important;
 	}
 
 
@@ -93,21 +94,18 @@
 
 
 	.tigergold {
-		background-image: url("../images/parallax2/tigergold.png");
-		width: 495px;
-		left: 510px;
+		background: url("../images/parallax2/tigergold.png") no-repeat fixed;
+		background-position-x: 69%!important;
 	}
 
 	.bunchincense {
-		background-image: url("../images/parallax2/bunchincense.png");
-		width: 444px;
-		left: 273px;
+		background: url("../images/parallax2/bunchincense.png") no-repeat fixed;
+		background-position-x: 39%!important;
 	}
 
 	.incensestick {
-		background-image: url("../images/parallax2/incense.png");
-		width: 498px;
-		left: 665px;
+		background: url("../images/parallax2/incense.png") no-repeat fixed;
+		background-position-x: 85%!important;
 	}
 
 
@@ -116,34 +114,28 @@
 
 
 	.buddah {
-		background-image: url("../images/parallax3/buddah.png");
-		width: 506px;
-		left: 183px;
+		background: url("../images/parallax3/buddah.png") no-repeat fixed;
+		background-position-x: 27%!important;
 	}
 
 	.bamboo {
-		background-image: url("../images/parallax3/bamboo.png");
-		width: 637px;
-		left: -193px;
+		background: url("../images/parallax3/bamboo.png") no-repeat fixed;
+		background-position-x: -26%!important;
 	}
 
 	.plant {
-		background-image: url("../images/parallax3/plant.png");
-		width: 414px;
-		left: 546px;
+		background: url("../images/parallax3/plant.png") no-repeat fixed;
+		background-position-x: 66%!important;
 	}
 
 	.leaf1 {
-		background-image: url("../images/parallax3/leaf1.png");
-		width: 220px;
-		left: 493px;
+		background: url("../images/parallax3/leaf1.png") no-repeat fixed;
+		background-position-x: 50%!important;
 	}
 
-
 	.leaf2 {
-		background-image: url("../images/parallax3/leaf2.png");
-		width: 211px;
-		right: -1%;
+		background: url("../images/parallax3/leaf2.png") no-repeat fixed;
+		background-position-x: 100%!important;
 	}
 
 
@@ -158,19 +150,16 @@
 	}
 
 	.moneytheme {
-		background-image: url("../images/parallax3/leaf2.png");
-		width: 191px;
-		left: -1%;
+		background: url("../images/parallax1/mobile/combined.png") no-repeat fixed;
+		background-position-x: -78%!important;
 	}
 
 	.culturetheme {
-		background-image: url("../images/parallax3/leaf2.png");
-		width: 191px;
-		right: -1%;
+		background: url("../images/parallax2/mobile/combined.png") no-repeat fixed;
+		background-position-x: 151%!important;
 	}
 
 	.healththeme{
-		background-image: url("../images/parallax3/leaf2.png");
-		width: 191px;
-		left: -1%;
+		background: url("../images/parallax3/mobile/combined.png") no-repeat fixed;
+		background-position-x: -16%!important;
 	}

@@ -139,7 +139,8 @@
 	}
 
 	#container{
-		background: brown;
+		background: #ffffff;
+		/*background: brown;*/
 		position:relative;
 		/*width: 1280px;*/
 		width: 100%;
@@ -149,9 +150,16 @@
 
 	section{
 		height:auto;
-		overflow: hidden;
 		position:relative;
 	}
+
+	.wraps{
+		overflow: hidden;
+		position: relative;
+		height: 100%;
+	}
+
+
 
 	.overlayedContent{
 		z-index:1;
@@ -163,7 +171,7 @@
 
 	.backgroundImage{
 		z-index:0;
-		background: orange;
+		/*background: orange;*/
 	}
 
 	.backgroundImage img{
@@ -175,7 +183,7 @@
 		left :8%;
 		width: 84%;
 		position: fixed;
-		z-index: 2;
+		z-index: 3;
 	}
 	#header .mobileclose{
 		position: absolute;
@@ -258,4 +266,89 @@
 	.swiper-wrapper .swiper-slide img{
 		width: 100%;
 		height: auto;
+	}
+
+
+
+
+
+	section#introduction .transition{
+		background: url("../images/transition1.png") 0 bottom no-repeat;
+		height: 133px;
+		z-index: 2;
+		position: absolute;
+		bottom: -53px;
+		width: 100%;
+	}
+
+
+	section#marketingShots .transition{
+		background: url("../images/transition2.png") 0 bottom no-repeat;
+		height: 133px;
+		z-index: 1;
+		position: absolute;
+		bottom: -32px;
+		width: 100%;
+	}
+
+
+
+	section#parallaxOne .transition{
+		background: url("../images/transition3.png") 0 bottom no-repeat;
+		height: 133px;
+		z-index: 1;
+		position: absolute;
+		bottom: -27px;
+		width: 100%;
+	}
+
+
+
+	section#parallaxTwo .transition{
+		background: url("../images/transition4.png") 0 bottom no-repeat;
+		height: 177px;
+		z-index: 1;
+		position: absolute;
+		bottom: -121px;
+		width: 100%;
+	}
+
+
+	section#parallaxThree .transition{
+		background: url("../images/transition5.png") 0 bottom no-repeat;
+		height: 133px;
+		z-index: 2;
+		position: absolute;
+		bottom: -37px;
+		width: 100%;
+	}
+
+
+	section#gallery .transition{
+		background: url("../images/transition6.png") 0 bottom no-repeat;
+		height: 386px;
+		z-index: 1;
+		position: absolute;
+		bottom: -296px;
+		width: 100%;
+	}
+
+
+	section#testimonials .transition{
+		background: url("../images/transition7.png") 0 bottom no-repeat;
+		height: 271px;
+		z-index: 1;
+		position: absolute;
+		bottom: -165px;
+		width: 100%;
+	}
+
+
+	section#about .transition{
+		background: url("../images/transition8.png") 0 bottom no-repeat;
+		height: 139px;
+		z-index: 1;
+		position: absolute;
+		bottom: -84px;
+		width: 100%;
 	}

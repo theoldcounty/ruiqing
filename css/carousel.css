@@ -15,19 +15,39 @@
 		text-indent: 9999px;
 	}
 
+
 	.arrow.left {
 		left: 20px;
-		background-position: 0 -51px;
+		width: 96px;
+		background: url('../images/arrowspriteleft.png') 0 0 no-repeat;
 	}
+	.arrow.left:hover {
+		background: url('../images/arrowspriteleft.png') 0 -53px no-repeat;
+	}
+
+	.arrow.left.disable,
+	.arrow.left.disable:hover {
+		background: url('../images/arrowspriteleft.png') 0 -106px no-repeat;
+	}
+
+
+
 
 	.arrow.right {
 		right: 20px;
-		background-position: -50px -51px;
+		width: 96px;
+		background: url('../images/arrowspriteright.png') 0 0 no-repeat;
+	}
+	.arrow.right:hover {
+		background: url('../images/arrowspriteright.png') 0 -50px no-repeat;
 	}
 
-	.arrow.left.disable {
-		background-position: 0px -101px;
+	.arrow.right.disable,
+	.arrow.right.disable:hover {
+		background: url('../images/arrowspriteright.png') 0 -102px no-repeat;
 	}
+
+
 
 	.wrap1, .wrap2 {
 		display: initial;
@@ -64,7 +84,7 @@
 	}
 	#cover-flow nav a.filer {
 		width:3000px!important;
-		background: #ffffff;
+		background: #eeeeee;
 		cursor: default;
 	}
 
@@ -91,14 +111,14 @@
 		background: pink;
 	}
 
-	#fullspread .imgHolder img{
+	#fullspread img{
 		width: 100%;
 		height: auto;
 	}
 
 	.back{
 		position: absolute;
-		top: 10px;
+		top: 39px;
 		right: 28px;
 		z-index: 2;
 	}

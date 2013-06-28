@@ -398,20 +398,15 @@ $.App.curtainCarousel = {
 
 			$('.arrow.carousel').fadeOut(300);
 
-			//this.loadContent(url, function(){
-				//load complete
+			$.App.swiperHandler.setSwiperTo("fullgallery", index);
+			that.moveBars(index, function(){
+				console.log("finsihed moving the bars");
+				$('#cover-flow nav').hide();
+			});
 
-					$.App.swiperHandler.setSwiperTo("fullgallery", index);
-					that.moveBars(index, function(){
-						console.log("finsihed moving the bars");
-						$('#cover-flow nav').hide();
-					});
-
-					window.setTimeout(function(){
-						that.isCoverClicked = false;//reset
-					},300);
-
-			//});
+			window.setTimeout(function(){
+				that.isCoverClicked = false;//reset
+			},300);
 
 		},
 		switchToColor: function(el){
@@ -432,12 +427,10 @@ $.App.curtainCarousel = {
 				that.onArrowClick(this);
 			});
 
-
 			$(".back a").click(function(e) {
 				e.preventDefault();
 				that.revertBars();
 			});
-
 
 			$(".arrow.carousel").mouseover(function() {
 				var isDisabled = $(this).hasClass("disable");
