@@ -22,6 +22,42 @@
 		.fs-img {
 			max-width: 1500px!important;
 		}
+
+		.transition {			
+			background-size: 100% auto!important;	
+		}
+
+		section#introduction .transition {
+			bottom: -64px;
+		}
+		section#marketingShots .transition {
+			bottom: -37px;
+		}
+
+		section#parallaxOne .transition {
+			bottom: -34px;
+		}
+
+		section#parallaxTwo .transition{
+			bottom: -141px;
+		}
+
+		section#parallaxThree .transition{
+			bottom: -44px;
+		}
+
+		section#gallery .transition{
+			bottom: -347px;
+		}
+
+		section#testimonials .transition{
+			bottom: -195px;
+		}
+
+		section#about .transition{
+			bottom: -98px;
+		}
+
 	}
 
 	/*standard mode*/
@@ -106,13 +142,9 @@
 			font-size: 11px;
 		}
 
-		#menu li a {
-			font-size: 11px;
-		}
 
 		#menu li {
-			padding-left: 6px;
-			padding-right: 6px;
+			padding-right: 2px;
 		}
 
 		#header .wrapperelements{
@@ -122,10 +154,68 @@
 
 	}
 
+	@media only screen and (min-width: 760px){
+		#menu {
+			right: 0!important;
+		}
+	}
+
+	@media only screen and (max-width: 760px){
+		#container{
+			position: absolute;
+		}
+
+		.header-container>header {
+			width:100%;
+			left: 0;
+		}
+
+		.header-container>header #menu-link {
+			display: block;
+		}
+
+		#menu {
+			position: absolute;
+			overflow: hidden;
+			top: 0;
+			right: -240px;
+			padding: 0;
+			width: 240px;
+			height: 100%;
+			background: #111315;
+			box-shadow: inset 5px 0 7px 1px #000;
+		}
+
+		.header-container>header>nav ul#contactdetails {
+			background: #333333;
+			padding-top: 5px;
+			padding-bottom: 5px;		
+		}
+
+		.header-container>header>nav ul.block li {
+			border-bottom: 1px dotted #303133;
+		}
+
+		.header-container>header>h1,
+		#nav-pointer{
+			display: none;
+		}
+	}
+
+
 
 	/*degrade paralax images for ipad portrait mode */
 	@media only screen and (max-width: 900px){
+		
+		ul#contactdetails{
+			width: 110px;
+		}
 
+		ul#contactdetails li{
+			width: 100%;
+			padding-right: 0;
+			text-align: right;		
+		}
 
 		.goldFish {
 			background-image: url("../images/parallax1/mobile/fish.png")!important;
@@ -217,17 +307,6 @@
 			left: 0;
 			width: 100%;
 		}
-		#header .mobileclose{
-			display: block;
-		}
-		#header .mobilemenu{
-			display: block;
-		}
-		#header .wrapperelements{
-			background: red;
-			width: 100%;
-			display: none;
-		}
 
 		#menu {
 			height: auto;
@@ -238,15 +317,13 @@
 
 		#contactdetails{
 			float: left;
-			width: 100%;
+			width: 100%!important;
+			text-align: center;
 		}
 
 		#contactdetails li{
 			width: 100%;
-		}
-
-		#nav-pointer{
-			display: none;
+			text-align: center!important;
 		}
 
 
@@ -342,8 +419,6 @@
 	/*ipad mode*/
 	@media only screen and (max-width: 750px) and (min-width: 451px){
 
-
-
 		#marketinggallery h2 {
 			font-size: 30px;
 			line-height: 30px;
@@ -358,7 +433,7 @@
 			left: 5.4%;
 		}
 		.compass h1{
-			bottom: 17%;
+			bottom: 20%;
 			left: 6%;
 		}
 
@@ -372,12 +447,12 @@
 		}
 
 		.buddahlife h2{
-			top: 5%;
-			right: 20%;
+			top: 11%;
+			right: 9%;
 		}
 		.buddahlife h1{
-			top: 13%;
-			right: 19%;
+			top: 17%;
+			right: 10%;
 		}
 
 
@@ -639,7 +714,7 @@
 		}
 
 		#contact .contactform{
-			height: auto;
+			height: 580px;
 			padding-bottom: 40px;
 		}
 
@@ -751,7 +826,7 @@
 		}
 
 		#contact .contactform{
-			height: auto;
+			height: 580px;
 			padding-bottom: 40px;
 		}
 
@@ -795,11 +870,11 @@
 
 		#container{
 			background: pink;
-			width: 320px;
+			/*width: 320px;*/
 		}
 
 		.swiper-container, .swiper-slide {
-			width: 320px;
+			width: 100%;
 			height: 215px;
 			/*background: red;*/
 		}
@@ -816,19 +891,6 @@
 			height: 220px!important;
 		}
 
-
-
-
-		#menu{
-			width: 117px;
-			position: absolute;
-			right: 0;
-			padding-top: 16px;
-		}
-
-		#menu li{
-			border-right:0;
-		}
 
 	}
 

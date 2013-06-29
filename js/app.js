@@ -45,7 +45,7 @@ $.App ={
 	},
 	menuListener: function(){
 		var that = this;
-		var $navigation = $('#menu li');
+		var $navigation = $('#menu ul.block li');
 
 		window.setTimeout(function() {
 			that.highlightMenuItem($navigation.find('a').first());
@@ -57,6 +57,7 @@ $.App ={
 	},
 	highlightMenuItem: function($item){
 		var widthOfItem = $item.width();
+
 		$('#nav-pointer').stop().animate({ left: $item.position().left + (widthOfItem/2) - 5 }, 500, 'easeOutBack');
 	},
 	isResponsiveBrowser: true,
@@ -71,24 +72,7 @@ $.App ={
 			this.loadJsDynamically("js/libs/zepto.touch.js");//dynamically load and add this .js file
 			this.loadJsDynamically("js/responsive.js");//dynamically load and add this .js file
 		}
-	},/*
-	addMenuListener: function(){
-		var that = this;
-		var $navigation = $('.internal-links li');
-
-		window.setTimeout(function() {
-			that.highlightMenuItem($navigation.find('a').first());
-		}, 200);
-
-		$navigation.find('a').on('mouseover', function() {
-			that.highlightMenuItem($(this));
-		});
 	},
-	highlightMenuItem: function($item) {
-		$('#nav-pointer').stop().animate({ top: $item.position().top + 5 }, 500, 'easeOutBack');
-		$('#nav-pointer').find('#pointer-left').stop().animate({left: $item.position().left - 15}, 500);
-		$('#nav-pointer').find('#pointer-right').stop().animate({left: $item.position().left + $item.width() + 10}, 500);
-	},*/
 	hashtrigger: function(hash){
 		this.setHash(hash);//set the changed hash
 	},

@@ -92,10 +92,10 @@ $.App.scrollMenu = {
 		var _self = this;
 
 		//Smooth scroll when user click link that starts with #
-		$('ul#menu a').click(function(event) {
+		$('#menu ul li a').click(function(event) {
 			event.preventDefault();//prevent the browser from jumping down to section.
 
-			$('ul#menu a').removeClass("selected");
+			$('#menu a').removeClass("selected");
 			$(this).addClass("selected");
 
 			console.log("clicked menu");

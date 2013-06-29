@@ -348,9 +348,7 @@ $.App.curtainCarousel = {
 
 
 		},
-
 		loadContent: function(url, callback){
-
 			$('#fullspread .imgHolder').fadeOut(500, function(){
 				$('#fullspread .imgHolder').empty().append('<img src="'+url+'"/>');
 			});

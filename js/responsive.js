@@ -68,6 +68,10 @@ $.App.responsive = {
 	adaptSectionHeights: function(){
 		$('section').each(function(index){
 			var wrapperHeight = $(this).find('.wrappers').outerHeight(true);
+			
+			console.log($(this).attr("id"));
+
+			console.log("wrapperHeight", wrapperHeight);
 			$(this).css("height", wrapperHeight);
 		});
 	},
@@ -112,12 +116,17 @@ $.App.responsive = {
 	},
 	loopSwipersInit: function(){
 		var that = this;
-		$('[data-swiper="true"]').each(function(index){
-			var img = $(this).find('.swiper-slide').eq(0).find('img');
-			that.checkloadImg(img, function(msg){
-				that.adaptSwipers();
-			});
+
+		$(window).load(function() {
+			// executes when complete page is fully loaded, including all frames, objects and images
+			$('[data-swiper="true"]').each(function(index){
+				var img = $(this).find('.swiper-slide').eq(0).find('img');
+				that.checkloadImg(img, function(msg){
+					that.adaptSwipers();
+				});
+			});			
 		});
+
 	},
 	init: function(){
 		var that = this;
@@ -127,5 +136,6 @@ $.App.responsive = {
 	onResize: function(){
 		this.checkMode();
 		this.adaptSwipers();
+		this.adaptSectionHeights();
 	}
 };

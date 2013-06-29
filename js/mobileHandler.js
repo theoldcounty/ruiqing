@@ -7,24 +7,46 @@
 
 $.App.mobileHandler = {
 	init: function(){
+		$('#menu-link').addClass("close");
 		this.bindMobileEvents();
 	},
 	bindMobileEvents:function(){
 		var that = this;
-		$('.mobilemenu a').click(function(e) {
-			e.preventDefault();-
-			that.openMobileMenu();
+		$('#menu-link').click(function(e) {
+			e.preventDefault();
+			
+			if($(this).hasClass("close")){
+				$(this).removeClass("close").addClass("open");
+				that.openMobileMenu();
+			}else{
+				$(this).addClass("close").removeClass("open");
+				that.closeMobileMenu();
+			}
 		});
 
-		$('.mobileclose a').click(function(e) {
-			e.preventDefault();-
+		$('#menu li a').click(function(e) {
+			e.preventDefault();
+			console.log("clicked link detected now close menu");
+
+			$('#menu-link').addClass("close").removeClass("open");
 			that.closeMobileMenu();
-		});						
+		});
+	},
+	animateElement: function(el, posRight){
+		$(el).animate({
+			right: posRight,
+		}, 400, "swing", function() {
+			// Animation complete.
+		});
 	},
 	openMobileMenu: function(){
-		$('#header .wrapperelements').show();
+		this.animateElement('#menu-link', 240);
+		this.animateElement('#container', 240);
+		this.animateElement('#menu', 0);
 	},
 	closeMobileMenu: function(){
-		$('#header .wrapperelements').hide();
+		this.animateElement('#menu-link', 0);
+		this.animateElement('#container', 0);
+		this.animateElement('#menu', -240);
 	}
 };

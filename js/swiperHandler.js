@@ -31,6 +31,9 @@ $.App.swiperHandler = {
 			$(holder).find('.swiper-wrapper').append('<div class="swiper-slide">'+contentArray[i]+'</div>');
 		}
 	},
+	swapImgPrefix: function(url, oldPrefix, newPrefix){
+		return url.replace(oldPrefix,newPrefix);
+	},
 	buildGallerySwiper: function(){
 		var that = this;
 
@@ -39,8 +42,10 @@ $.App.swiperHandler = {
 		$('#cover-flow nav a').each(function(index) {
 			var imgUrl = $(this).data("url");
 
-			var html = '<img src="'+imgUrl+'"/>';
-			localArray.push(html);
+			if(imgUrl != undefined){
+				var html = '<img data-src="'+imgUrl+'" data-large="'+that.swapImgPrefix(imgUrl, "small", "large")+'" alt="Gallery" data-width="240" data-height="157" class="fs-img">';
+				localArray.push(html);
+			}
 
 			if(count-1 == index){
 				that.buildSwiper(".imgHolder", "fullgallery", localArray);
