@@ -19,7 +19,7 @@
 	}
 
 	body{
-		background: grey;
+		background: url("../images/pattern.png") #444444;
 		overflow: hidden;
 	}
 
@@ -470,4 +470,10 @@
 		position: absolute;
 		bottom: -84px;
 		width: 100%;
+	}
+
+	section#introduction .coloumn{
+		position: absolute;
+		bottom: 17%;
+		left:4%;
 	}

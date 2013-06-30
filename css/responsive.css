@@ -155,12 +155,65 @@
 	}
 
 	@media only screen and (min-width: 760px){
+		#container,
 		#menu {
 			right: 0!important;
 		}
 	}
 
 	@media only screen and (max-width: 760px){
+		
+
+
+		#marketingShots .arrow{
+			display:none;
+		}
+
+		.pagination .swiper-pagination-switch {
+			background-size: 100% auto;
+			width: 18px;
+			height: 19px;
+		}
+
+		.pagination .swiper-active-switch {
+			background-size: 100% auto;
+			width: 23px;
+			top: 1px;
+			position: relative;
+		}
+
+		.pagination {
+			bottom: 53px;
+			padding-top: 7px;
+		}
+
+		#header {
+			left: 0;
+			width: 100%;
+		}
+
+
+
+		#contactdetails{
+			float: left;
+			width: 100%!important;
+			text-align: center;
+		}
+
+		#contactdetails li{
+			width: 100%;
+			text-align: center!important;
+		}
+
+
+		section#gallery .transition{
+			height: 366px;
+		}
+
+		section#marketingShots .transition{
+			height: 101px;
+		}
+
 		#container{
 			position: absolute;
 		}
@@ -174,6 +227,9 @@
 			display: block;
 		}
 
+		#menu li {
+			width: 100%;
+		}
 		#menu {
 			position: absolute;
 			overflow: hidden;
@@ -181,7 +237,7 @@
 			right: -240px;
 			padding: 0;
 			width: 240px;
-			height: 100%;
+			height: auto;
 			background: #111315;
 			box-shadow: inset 5px 0 7px 1px #000;
 		}
@@ -279,66 +335,9 @@
 	}		
 
 
-	/*mobile mode*/
-	@media only screen and (max-width: 750px){
-		#marketingShots .arrow{
-			display:none;
-		}
-
-		.pagination .swiper-pagination-switch {
-			background-size: 100% auto;
-			width: 18px;
-			height: 19px;
-		}
-
-		.pagination .swiper-active-switch {
-			background-size: 100% auto;
-			width: 23px;
-			top: 1px;
-			position: relative;
-		}
-
-		.pagination {
-			bottom: 53px;
-			padding-top: 7px;
-		}
-
-		#header {
-			left: 0;
-			width: 100%;
-		}
-
-		#menu {
-			height: auto;
-		}
-		#menu li {
-			width: 100%;
-		}
-
-		#contactdetails{
-			float: left;
-			width: 100%!important;
-			text-align: center;
-		}
-
-		#contactdetails li{
-			width: 100%;
-			text-align: center!important;
-		}
-
-
-		section#gallery .transition{
-			height: 366px;
-		}
-
-		section#marketingShots .transition{
-			height: 101px;
-		}
-
-	}
 
 	/*standard mode*/
-	@media only screen and (max-width: 836px) and (min-width: 750px){
+	@media only screen and (max-width: 836px) and (min-width: 760px){
 
 
 		#marketinggallery h2 {

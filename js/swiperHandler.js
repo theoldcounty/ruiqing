@@ -80,7 +80,9 @@ $.App.swiperHandler = {
 
 		that.objSwipers = localArray;
 
-		$.App.responsive.pageRefine(); //ensure pagination looks good initially
+		//if(!$.App.isOldBrowser){
+			$.App.responsive.pageRefine(); //ensure pagination looks good initially
+		//}
 	},
 	objSwipers: null,
 	getSwiper: function(id){

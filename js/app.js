@@ -34,13 +34,18 @@ $.App ={
 		
 		this.menuListener();
 	},
-	loadJsDynamically: function(filename){
+	loadJsDynamically: function(type, filename){
 		var fileref=document.createElement('script');
 		fileref.setAttribute("type","text/javascript");
 		fileref.setAttribute("src", filename);
 
 		if (typeof fileref!="undefined"){
-			$('.jsholder').append(fileref);
+			if(type == "lib"){
+				$('.jsholderlib').append(fileref);
+			}
+			else{
+				$('.jsholder').append(fileref);
+			}
 		}
 	},
 	menuListener: function(){
@@ -60,17 +65,27 @@ $.App ={
 
 		$('#nav-pointer').stop().animate({ left: $item.position().left + (widthOfItem/2) - 5 }, 500, 'easeOutBack');
 	},
+	isOldBrowser: function(){
+		var isOld = false;
+
+		if ($.browser.msie  && parseInt($.browser.version, 10) <= 8) {
+			isOld = true;
+		}
+		return isOld;
+	},
 	isResponsiveBrowser: true,
 	browserCheck: function(){
 		console.log("browserCheck");
 
-		if ($.browser.msie  && parseInt($.browser.version, 10) <= 8) {
+		if (this.isOldBrowser()) {
 			$('html').addClass("ie8orless");
 			this.isResponsiveBrowser = false;
 		}
 		else{
-			this.loadJsDynamically("js/libs/zepto.touch.js");//dynamically load and add this .js file
-			this.loadJsDynamically("js/responsive.js");//dynamically load and add this .js file
+			this.loadJsDynamically("lib","js/libs/zepto.touch.js");//dynamically load and add this .js file
+			this.loadJsDynamically("lib","js/libs/foresight.js");//dynamically load and add this .js file
+
+			//this.loadJsDynamically("js","js/responsive.js");//dynamically load and add this .js file
 		}
 	},
 	hashtrigger: function(hash){
