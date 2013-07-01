@@ -75,7 +75,7 @@ $.App ={
 	},
 	isResponsiveBrowser: true,
 	browserCheck: function(){
-		console.log("browserCheck");
+		//console.log("browserCheck");
 
 		if (this.isOldBrowser()) {
 			$('html').addClass("ie8orless");
@@ -84,8 +84,6 @@ $.App ={
 		else{
 			this.loadJsDynamically("lib","js/libs/zepto.touch.js");//dynamically load and add this .js file
 			this.loadJsDynamically("lib","js/libs/foresight.js");//dynamically load and add this .js file
-
-			//this.loadJsDynamically("js","js/responsive.js");//dynamically load and add this .js file
 		}
 	},
 	hashtrigger: function(hash){
@@ -100,20 +98,10 @@ $.App ={
 	}
 };
 
-	/*on window resize*/
-	window.onresize = function(event) {
-		if($.App.isResponsiveBrowser){
-			$.App.responsive.onResize();
+	if($.App.isResponsiveBrowser){
+		window.onresize = function(event) {			
+				$.App.responsive.onResize();
 		}
-	}
-
-	/*on window scroll*/
-	window.onscroll = function (event) {
-		//subPageFunctions.bindScrollHandler();
-
-		window.setTimeout(function(){
-			//subPageFunctions.bindScrollHandler();
-		},1000);
 	}
 
 	$(document).ready(function() {
@@ -121,16 +109,16 @@ $.App ={
 		if($.App.isResponsiveBrowser){
 			$.App.responsive.init();
 		}
+		else{
+			$.App.responsive.oldBrowserFix();
+		}
 		$.App.init();
 	});
 
-	// Bind an event to window.onhashchange that, when the history state changes,
-	// gets the url from the hash and displays either our cached content or fetches
-	// new content to be displayed.
+/*
 	$(window).bind('hashchange', function(e) {
 		$.App.hashtrigger($.App.getHash());
 	})
 
-	// Since the event is only triggered when the hash changes, we need to trigger
-	// the event now, to handle the hash the page may have loaded with.
 	$(window).trigger('hashchange');
+*/

@@ -98,13 +98,13 @@ $.App.scrollMenu = {
 			$('#menu a').removeClass("selected");
 			$(this).addClass("selected");
 
-			console.log("clicked menu");
+			//console.log("clicked menu");
 
 			//gets the distance from the top of the
 			//section refenced in the href.
 
 			var target = _self.getTargetTop($(this));
-			console.log("target", target);
+			//console.log("target", target);
 
 			$('html, body').animate({scrollTop:target}, 500);//scrolls to that section.
 		});

@@ -49,6 +49,9 @@ $.App.swiperHandler = {
 
 			if(count-1 == index){
 				that.buildSwiper(".imgHolder", "fullgallery", localArray);
+				if(!$.App.isResponsiveBrowser){
+					$.App.responsive.fsFix();
+				}
 			}
 		});
 
@@ -92,7 +95,7 @@ $.App.swiperHandler = {
 		var speed = 900;
 
 		this.getSwiper(id).swipeTo(index, speed, function(msg){
-			console.log(msg);
+			//console.log(msg);
 		});
 	},
 	goPreviousSwipe: function(id){

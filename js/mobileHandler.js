@@ -8,7 +8,10 @@
 $.App.mobileHandler = {
 	init: function(){
 		$('#menu-link').addClass("close");
-		this.bindMobileEvents();
+
+		if($.App.isResponsiveBrowser){
+			this.bindMobileEvents();
+		}
 	},
 	bindMobileEvents:function(){
 		var that = this;
@@ -26,7 +29,7 @@ $.App.mobileHandler = {
 
 		$('#menu li a').click(function(e) {
 			e.preventDefault();
-			console.log("clicked link detected now close menu");
+			//console.log("clicked link detected now close menu");
 
 			$('#menu-link').addClass("close").removeClass("open");
 			that.closeMobileMenu();

@@ -69,9 +69,9 @@ $.App.responsive = {
 		$('section').each(function(index){
 			var wrapperHeight = $(this).find('.wrappers').outerHeight(true);
 			
-			console.log($(this).attr("id"));
+			//console.log($(this).attr("id"));
 
-			console.log("wrapperHeight", wrapperHeight);
+			//console.log("wrapperHeight", wrapperHeight);
 			$(this).css("height", wrapperHeight);
 		});
 	},
@@ -127,6 +127,16 @@ $.App.responsive = {
 			});			
 		});
 
+	},
+	fsFix: function(){
+		$('.fs-img').show();
+		$('.fs-img').each(function(index){
+			$(this).attr("src", $(this).data("large"));
+		});
+	},
+	oldBrowserFix: function () {
+		this.fsFix();
+		this.adaptSectionHeights();
 	},
 	init: function(){
 		var that = this;

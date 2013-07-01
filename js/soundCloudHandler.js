@@ -8,7 +8,6 @@ swiperHandler
 
 $.App.soundCloudHandler = {
 	init: function(){
-		console.log("start swiper stuff");
 		//bind events
 		this.bindSoundCloudEvents();
 	},

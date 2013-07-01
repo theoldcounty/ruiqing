@@ -46,22 +46,28 @@ $.App.swipeOperations = {
 	bindEvents: function(){
 		var that = this;
 
-		$('body').swipeLeft(function(e){
-			that.right();
-		});
+		if($.App.isResponsiveBrowser){
+			
 
-		$('body').swipeRight(function(e){
-			that.left();
-		});
+			$('body').swipeLeft(function(e){
+				that.right();
+			});
 
+			$('body').swipeRight(function(e){
+				that.left();
+			});
 
-		$(".arrow").tap(function(e) {
-			that.onArrowClick(this);
-		});
+			
+			$(".arrow").tap(function(e) {
+				that.onArrowClick(this);
+			});
 
-		$("#cover-flow nav a").tap(function(e) {
-			that.onCoverClick(this);
-		});
+			$("#cover-flow nav a").tap(function(e) {
+				that.onCoverClick(this);
+			});
+
+			
+		}
 
 		this.bound = true;
 	}

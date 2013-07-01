@@ -21,7 +21,7 @@ animateGroupedBars //this performs the global animation for the two wrapped bar 
 
 $.App.curtainCarousel = {
 		init: function(){
-			console.log("start curtain carousel");
+			//console.log("start curtain carousel");
 
 			var that = this;
 			this.bindEvents();
@@ -133,24 +133,24 @@ $.App.curtainCarousel = {
 					var nextIndex = currentIndex+1;
 				}
 
-				console.log("nextIndex", nextIndex);
+				//console.log("nextIndex", nextIndex);
 				var nextSelectedElement = $("#cover-flow nav a").eq(nextIndex);
 
 				var isExist = nextSelectedElement.length;
 
-				console.log("test is exit"+isExist);
+				//console.log("test is exit"+isExist);
 
 				if(isExist > 0 && nextIndex > 0){
 					$("#cover-flow nav a").removeClass();
 					nextSelectedElement.addClass("selected");
 
 					var newImg = $("#cover-flow nav a").eq(nextIndex).data("url");
-					console.log("animate the flow time mode"+ direction);
+					//console.log("animate the flow time mode"+ direction);
 
-					console.log("newImg"+newImg);
+					//console.log("newImg"+newImg);
 
 					that.loadContent(newImg, function(){
-						console.log("new image in place via new method");
+						//console.log("new image in place via new method");
 					});
 				}
 				else{
@@ -392,13 +392,13 @@ $.App.curtainCarousel = {
 			var title = $(el).attr("title");
 			var index = $(el).index();
 
-			console.log("index", index);
+			//console.log("index", index);
 
 			$('.arrow.carousel').fadeOut(300);
 
 			$.App.swiperHandler.setSwiperTo("fullgallery", index);
 			that.moveBars(index, function(){
-				console.log("finsihed moving the bars");
+				//console.log("finsihed moving the bars");
 				$('#cover-flow nav').hide();
 			});
 
