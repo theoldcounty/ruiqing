@@ -124,7 +124,7 @@
 		margin: 0;
 		float: right;
 		padding: 0;
-		overflow: hidden;		
+		overflow: hidden;
 	}
 
 	.header-container>header>nav ul#contactdetails li{
@@ -304,7 +304,7 @@
 		height: 133px;
 		z-index: 1;
 		position: absolute;
-		bottom: -27px;
+		bottom: -30px;
 		width: 100%;
 	}
 

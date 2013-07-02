@@ -1,6 +1,47 @@
 
 
 
-#menu {
-	left: 0!important;
-}
+	#menu {
+		left: 0!important;
+	}
+
+
+	.goldFish {
+		top:130px;
+	}
+
+	.coin1 {
+		top:170px;
+	}
+
+	.coin3 {
+		top:300px;
+	}
+
+
+	.bunchincense {
+		background-position-y:-200px;
+	}
+
+
+
+	.buddah {
+		top:300px;
+	}
+
+	.plant {
+		top:170px;
+	}
+
+	.leaf1 {
+		top:670px;
+	}
+
+	.ui-state-default{
+		border-bottom:1px solid #8e8e8e;
+	}
+
+
+	#marketinggallery h1{
+		font-size:36px;
+	}
